@@ -11,10 +11,10 @@ WORKDIR /src
 # Build
 FROM base as build
 
-COPY --link package.json package-lock.json ./
+COPY package.json package-lock.json ./
 RUN npm install --production=false
 
-COPY --link . .
+COPY . .
 
 # Increase Node.js memory limit
 ENV NODE_OPTIONS="--max-old-space-size=4096"
