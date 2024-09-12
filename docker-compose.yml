@@ -1,0 +1,27 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      args:
+        - PORT=${PORT}
+    ports:
+      - ${PORT}:${PORT}
+    networks:
+      - portfolio
+  nginx:
+    build: ./nginx
+    restart: always
+    ports:
+      - '80:80'
+      - "443:443"
+    depends_on:
+      - app
+    # volumes:
+    #   - /etc/letsencrypt:/etc/letsencrypt:ro
+    #   - /var/www/certbot:/var/www/certbot
+    networks:
+      - portfolio
+networks:
+  portfolio:
+    external: true # change to external
