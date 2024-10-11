@@ -5,6 +5,7 @@ services:
       context: .
       args:
         - PORT=${PORT}
+    restart: always
     ports:
       - ${PORT}:${PORT}
     networks:

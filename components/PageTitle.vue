@@ -1,9 +1,17 @@
 <template>
-  <component :is="headingTag" class="text-[#0F172A]" :class="titleClass">
+  <component
+    :is="headingTag"
+    class="text-[#0F172A] font-bold"
+    :class="titleClass"
+  >
     {{ title }}
   </component>
 
-  <p class="mt-8 text-[#0F172A]" v-if="description" :class="descriptionClass">
+  <p
+    class="mt-4 lg:mt-8 text-[#0F172A]"
+    v-if="description"
+    :class="descriptionClass"
+  >
     {{ description }}
   </p>
 </template>
@@ -33,13 +41,13 @@ const props = defineProps({
   titleClass: {
     type: String as PropType<string>,
     required: false,
-    default: () => "text-4xl text-center font-bold",
+    default: () => "text-2xl sm:text-3xl lg:text-4xl text-center",
   },
 
   descriptionClass: {
     type: String as PropType<string>,
     required: false,
-    default: () => "text-2xl text-center",
+    default: () => "text-sm sm:text-base lg:text-2xl text-center",
   },
 });
 </script>

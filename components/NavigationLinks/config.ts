@@ -1,22 +1,22 @@
 export const navigationLinks = [
     {
-        label: "Home",
+        label: "navigationLinks.home",
         to: "/",
     },
     // {
-    //     label: "About me",
+    //     label: "navigationLinks.aboutMe",
     //     to: "/about",
     // },
     {
-        label: "Projects",
+        label: "navigationLinks.projects",
         to: "/projects",
     },
     // {
-    //     label: "Blog",
+    //     label: "navigationLinks.blog",
     //     to: "/blog",
     // },
     // {
-    //     label: "Contact",
+    //     label: "navigationLinks.contact",
     //     to: "/#contact",
     // },
 ]

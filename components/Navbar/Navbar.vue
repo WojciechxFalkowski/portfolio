@@ -5,7 +5,7 @@ const navigation = inject<Ref<any[]>>("navigation", ref(navigationLinks));
 
 <template>
   <header
-    class="bg-white/75 backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50"
+    class="backdrop-blur-xl bg-[#f5fcff] border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50"
   >
     <ContainerWrapper
       class="flex items-center justify-between gap-3 h-[--header-height]"
@@ -20,7 +20,7 @@ const navigation = inject<Ref<any[]>>("navigation", ref(navigationLinks));
         </a>
       </div>
 
-      <NavigationLinks class="items-center gap-x-8 hidden lg:flex"/>
+      <NavigationLinks class="items-center gap-x-8 hidden lg:flex" />
 
       <div class="flex items-center justify-end lg:flex-1 gap-1.5">
         <ColorModeButton></ColorModeButton>

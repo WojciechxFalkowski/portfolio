@@ -29,7 +29,14 @@ useSeoMeta({
 </script>
 
 <template>
-  <NuxtLayout >
-    <NuxtPage class="min-h-[calc(100vh-var(--header-height)-72px)]"/>
+  <NuxtLayout>
+    <NuxtPage class="min-h-[calc(100vh-var(--header-height)-72px)]" />
   </NuxtLayout>
 </template>
+
+<style lang="scss">
+body {
+  background: linear-gradient(to bottom, #f5fcff 0%, #ffffff 100%);
+}
+
+</style>

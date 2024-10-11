@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col gap-4">
-    <img :src="icon" alt="icon" class="w-10 h-10 m-auto" />
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <img :src="icon" alt="icon" class="w-10 h-10 mx-auto" />
 
-    <h3 :class="titleClass">{{ title }}</h3>
+    <h3 :class="titleClass">{{ $t(title) }}</h3>
 
-    <p :class="descriptionClass">{{ description }}</p>
+    <p :class="descriptionClass">{{ $t(description) }}</p>
   </div>
 </template>
 

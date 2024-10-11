@@ -7,7 +7,7 @@
         >
           <IconLogo class="w-8" />
 
-          <NavigationLinks class="items-center gap-x-8 flex"/>
+          <NavigationLinks class="items-center gap-x-8 flex" />
         </div>
 
         <Social />
@@ -16,26 +16,32 @@
       <div
         class="mt-8 flex justify-between items-center flex-col gap-8 lg:flex-row lg:gap-0"
       >
-        <p class="order-1 lg:order-none text-center lg:text-left">Made with 💖 by Wojciech Falkowski</p>
+        <p class="order-1 lg:order-none text-center lg:text-left">
+          <!-- Made with 💖 by Wojciech Falkowski -->
+        </p>
 
-        <div class="flex justify-center lg:justify-normal gap-8 lg:gap-4 w-full lg:w-auto">
-          <router-link :to="{ path: '/' }" class="hover:text-[#2DD4BF]"
-            >Privacy Policy</router-link
-          >
+        <div
+          class="flex justify-center lg:justify-normal gap-8 lg:gap-4 w-full lg:w-auto"
+        >
+          <router-link :to="{ path: '/' }" class="hover:text-[#2DD4BF]">
+            {{ $t("common.privacyPolicy") }}
+          </router-link>
 
           <!-- <router-link :to="{ path: '/' }" class="hover:text-[#2DD4BF]"
             >Terms of Service</router-link
           > -->
 
-          <router-link :to="{ path: '/' }" class="hover:text-[#2DD4BF]"
-            >Cookies Settings</router-link
-          >
+          <router-link :to="{ path: '/' }" class="hover:text-[#2DD4BF]">
+            {{ $t("common.cookiesSettings") }}
+          </router-link>
         </div>
       </div>
 
-      <p class="mt-4 lg:mt-8 text-sm text-[#0F172A] dark:text-zinc-500 text-center">
-        &copy; {{ recentYear }} Wojciech Falkowski - wojciechfalkowski.pl. All
-        rights reserved.
+      <p
+        class="mt-4 lg:mt-8 text-sm text-[#0F172A] dark:text-zinc-500 text-center"
+      >
+        &copy; {{ recentYear }} Wojciech Falkowski - wojciechfalkowski.pl.
+        {{ $t("common.allRightsReserve") }}
       </p>
     </footer>
   </ContainerWrapper>

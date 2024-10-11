@@ -1,36 +1,37 @@
 import { Service } from '~/types/service';
+import { useI18n } from 'vue-i18n'
 
 export default defineEventHandler<Service[]>(() => {
     return [
         {
             icon: "/websites-icon.svg",
-            title: "Websites",
-            description: "Responsive websites with seamless content management integration.",
+            title: "services.offerings.websites.title",
+            description: "services.offerings.websites.description",
         },
         {
             icon: "/online-stores-icon.svg",
-            title: "Online stores",
-            description: "Online stores optimized for effective product display and sales growth.",
+            title: "services.offerings.onlineStores.title",
+            description: "services.offerings.onlineStores.description",
         },
         {
             icon: "/custom-applications-icon.svg",
-            title: "Custom applications",
-            description: "Scalable web applications tailored to unique requirements.",
+            title: "services.offerings.customApplications.title",
+            description: "services.offerings.customApplications.description",
         },
         {
             icon: "/ui-ux-design-icon.svg",
-            title: "UI & UX Design",
-            description: "Modern, user-friendly interfaces for mobile and desktop.",
+            title: "services.offerings.uiUxDesign.title",
+            description: "services.offerings.uiUxDesign.description",
         },
         {
             icon: "/seo-performance-security-icon.svg",
-            title: "SEO, Performance & Security",
-            description: "Comprehensive audits, SEO, and performance optimization.",
+            title: "services.offerings.seoPerformanceSecurity.title",
+            description: "services.offerings.seoPerformanceSecurity.description",
         },
         {
             icon: "/analytics-icon.svg",
-            title: "Analytics",
-            description: "In-depth tracking of website traffic and user behavior to optimize performance.",
+            title: "services.offerings.analytics.title",
+            description: "services.offerings.analytics.description",
         },
     ];
 });

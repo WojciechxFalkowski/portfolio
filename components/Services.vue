@@ -1,11 +1,12 @@
 <template>
   <div>
     <PageTitle
-      title="Programming services"
-      description="Every project starts with an idea, and I support you at every stage – from requirements gathering to the final solution."
+      :title="$t('services.title')"
+      :description="$t('services.description')"
       headingTag="h2"
     />
-
-    <ServicesList class="mt-8" />
+    <ServicesList class="mt-8 lg:mt-16" />
   </div>
 </template>
+
+<script setup lang="ts"></script>

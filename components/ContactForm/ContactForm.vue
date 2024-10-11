@@ -1,8 +1,8 @@
 <template>
   <div>
     <PageTitle
-      title="Contact"
-      description="Let's talk about growing your business"
+      :title="$t('contact.title')"
+      :description="$t('contact.subtitle')"
       headingTag="h2"
     />
 

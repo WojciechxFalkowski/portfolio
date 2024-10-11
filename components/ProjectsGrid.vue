@@ -1,8 +1,10 @@
 <template>
   <div class="flex flex-col mt-8 gap-4">
-    <h1 class="text-3xl font-bold">My Portfolio</h1>
+    <h1 class="text-3xl font-bold">
+      {{ $t("projects.title") }}
+    </h1>
 
-    <h2 class="text-sm text-[#64748B]">Recent Projects</h2>
+    <h2 class="text-sm text-[#64748B]">{{ $t("projects.subtitle") }}</h2>
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-4">

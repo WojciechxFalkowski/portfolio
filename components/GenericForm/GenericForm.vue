@@ -13,7 +13,7 @@
           :id="field.id"
           v-model="formData[field.id]"
           :placeholder="''"
-          class="block px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-orange peer"
+          class="block px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-orange peer"
           :class="field.inputClass"
         >
           <option
@@ -29,7 +29,7 @@
           :for="field.id"
           class="absolute text-sm text-[#0F172A] dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
         >
-          {{ field.name }}
+          {{ $t(field.name) }}
         </label>
 
         <div class="text-red-500 text-xs min-h-4 min-w-full">
@@ -44,7 +44,7 @@
           :id="field.id"
           :type="field.type"
           v-slot="{ field: slotField, errors }"
-          class="block px-2.5 pb-2.5 pt-5 w-full text-sm border-2 border-[#2DD4BF] rounded text-[#0F172A] appearance-none dark:text-white focus:outline-none focus:ring-0 peer"
+          class="block px-2.5 pb-2.5 pt-5 w-full text-sm border border-[#2DD4BF] rounded text-[#0F172A] appearance-none dark:text-white focus:outline-none focus:ring-0 peer"
           v-model="formData[field.id]"
           :placeholder="''"
           :class="field.inputClass"
@@ -54,7 +54,7 @@
           :for="field.id"
           class="absolute text-sm text-[#0F172A] dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
         >
-          {{ field.name }}
+          {{ $t(field.name) }}
         </label>
 
         <div class="text-red-500 text-xs min-h-4 min-w-full">
@@ -74,7 +74,7 @@
       :disabled="isLoading"
       :isLoading="isLoading"
     >
-      {{ submitButton.name }}
+      {{ $t(submitButton.name) }}
     </Button>
   </Form>
 </template>

@@ -5,7 +5,7 @@
         class="text-sm/6 font-semibold flex items-center gap-1 text-[#0F172A] hover:text-[#2DD4BF]"
         :to="{ path: link.to }"
         activeClass="text-[#2DD4BF]"
-        >{{ link.label }}
+        >{{ $t(link.label) }}
       </router-link>
     </li>
   </ul>

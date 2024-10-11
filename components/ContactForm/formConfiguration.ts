@@ -6,7 +6,7 @@ import { ComponentType, Theme } from "../Button/Button.props";
 export const formConfiguration: GenericFormObject = {
     formClass: "grid grid-cols-12 gap-4",
     submitButton: {
-        name: "Send",
+        name: "form.send",
         componentType: ComponentType.Button,
         class: "col-span-12",
         theme: Theme.Primary,
@@ -14,36 +14,31 @@ export const formConfiguration: GenericFormObject = {
     fields: [
         {
             id: "name",
-            name: "Imię",
+            name: "form.name",
             as: FieldType.input,
             type: "text",
             initialValue: "",
-            validation: yup.string().required("Pole jest wymagane"),
+            validation: yup.string().required("form.fieldIsRequired"),
             class: "col-span-12 md:col-span-6",
         },
         {
             id: "email",
-            name: "Email",
+            name: "form.email",
             as: FieldType.input,
             type: "text",
             initialValue: "",
-            validation: yup.string().required("Pole jest wymagane"),
+            validation: yup.string().required("form.fieldIsRequired"),
             class: "col-span-12 md:col-span-6",
         },
         {
             id: "message",
-            name: "Wiadomość",
+            name: "form.message",
             as: FieldType.textarea,
             type: "text",
             initialValue: "",
-            validation: yup.string().required("Pole jest wymagane"),
+            validation: yup.string().required("form.fieldIsRequired"),
             class: "col-span-12",
             inputClass: 'h-32',
         },
     ],
 };
-
-export const NEW_TEAM_MEMBER_ROUTE = 'new'
-export const TEAM_MEMBER_ROUTE = 'cms-zespol-id'
-export const TEAM_MEMBERS_ROUTE = 'cms-zespol'
-export const HOME_ROUTE = 'cms'
