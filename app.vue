@@ -38,7 +38,7 @@ useSeoMeta({
 html {
   scroll-behavior: smooth;
 }
-body {
-  background: linear-gradient(to bottom, #f5fcff 0%, #ffffff 100%);
-}
+// body {
+//   background: linear-gradient(to bottom, #f5fcff 0%, #ffffff 100%);
+// }
 </style>

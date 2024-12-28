@@ -7,31 +7,35 @@ const imageUrl = "/profile.jpg";
     class="h-[calc(100vh-85px)] flex flex-col md:flex-row items-center justify-center md:justify-between lg:py-8 relative md:gap-4"
   >
     <div
-      class="lg:space-y-2 order-1 md:-order-none mt-4 lg:mt-0 text-center md:text-left"
+      class="space-y-4 lg:space-y-8 order-1 md:-order-none mt-4 lg:mt-0 md:text-left lg:max-w-[50%] my-8 lg:my-0"
     >
-      <h1 class="text-[#0F172A] text-lg mt-4 lg:mt-0">
-        {{ $t("header.greeting") }}
+      <Subtitle :title="$t('header.greeting')" />
+
+      <h1 class="text-3xl md:text-4xl lg:text-[40px] text-[#2DD4BF]">
+        {{ $t("header.title") }}
       </h1>
 
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2DD4BF]">
-        {{ $t("header.title") }}
-      </h2>
-
-      <p class="lg:text-lg text-[#0F172A] mt-2 lg:mt-0 lg:py-2">
+      <h2 class="text-justify lg:text-left lg:text-[20px] text-[#0F172A]">
         {{ $t("header.description") }}
-      </p>
+      </h2>
 
       <button
         class="mt-4 px-6 py-3 bg-[#2DD4BF] text-white rounded-lg hover:bg-teal-500 transition-all"
       >
         {{ $t("header.contact") }}
       </button>
+
+      <div class="flex gap-8">
+        <IconGithub class="w-5 h-5"/>
+
+        <IconLinkedin class="w-5 h-5"/>
+      </div>
     </div>
 
     <img
       :src="imageUrl"
       alt="Image of Wojciech Falkowski"
-      class="rounded-lg h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[500px] lg:h-[500px] object-cover lg:mt-0"
+      class="h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px] object-cover lg:mt-0 rounded-full border-[#2DD4BF] border"
     />
 
     <IconCircle
@@ -61,3 +65,5 @@ const imageUrl = "/profile.jpg";
 </template>
 
 <script setup lang="ts"></script>
+
+<style></style>
