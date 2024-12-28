@@ -1,22 +1,19 @@
 export const navigationLinks = [
     {
-        label: "navigationLinks.home",
-        to: "/",
+      label: "navigationLinks.services",
+      to: "#services"
     },
-    // {
-    //     label: "navigationLinks.aboutMe",
-    //     to: "/about",
-    // },
     {
-        label: "navigationLinks.projects",
-        to: "/projects",
+      label: "navigationLinks.portfolios",
+      to: "#portfolios"
     },
-    // {
-    //     label: "navigationLinks.blog",
-    //     to: "/blog",
-    // },
-    // {
-    //     label: "navigationLinks.contact",
-    //     to: "/#contact",
-    // },
-]
+    {
+      label: "navigationLinks.experience",
+      to: "#experience"
+    },
+    {
+      label: "navigationLinks.skills",
+      to: "#skills"
+    }
+  ];
+  

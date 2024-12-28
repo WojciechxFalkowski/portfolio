@@ -52,11 +52,10 @@ export default defineI18nConfig(() => ({
                 fieldIsRequired: 'Field is required',
             },
             navigationLinks: {
-                home: 'Home',
-                aboutMe: 'About me',
-                projects: 'Projects',
-                blog: 'Blog',
-                contact: 'Contact'
+                services: 'Services',
+                portfolios: 'Portfolios',
+                experience: 'Experience',
+                skills: 'Skills'
             },
             projects: {
                 title: 'My portfolio',
@@ -118,11 +117,10 @@ export default defineI18nConfig(() => ({
                 fieldIsRequired: 'Pole jest wymagane',
             },
             navigationLinks: {
-                home: 'Strona główna',
-                aboutMe: 'O mnie',
-                projects: 'Projekty',
-                blog: 'Blog',
-                contact: 'Kontact'
+                services: 'Usługi',
+                portfolios: 'Portfolio',
+                experience: 'Doświadczenie',
+                skills: 'Umiejętności'
             },
             projects: {
                 title: 'Moje portfolio',

@@ -10,5 +10,5 @@
     </AnimatedVisibility> -->
 
   <!-- <CookieBanner /> -->
-  <Footer class=""/>
+  <Footer class="" />
 </template>

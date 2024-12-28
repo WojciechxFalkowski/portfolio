@@ -35,8 +35,10 @@ useSeoMeta({
 </template>
 
 <style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: linear-gradient(to bottom, #f5fcff 0%, #ffffff 100%);
 }
-
 </style>
