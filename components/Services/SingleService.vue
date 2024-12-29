@@ -1,14 +1,26 @@
 <template>
-  <div class="flex flex-col gap-2 lg:gap-4">
-    <img :src="icon" alt="icon" class="w-10 h-10 mx-auto" />
+  <div
+    class="flex flex-col gap-4 p-8 justify-center lg:py-12 rounded-lg bg-white text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300"
+  >
+    <div
+      class="mx-auto flex h-12 w-12 items-center justify-center rounded-md bg-teal-100"
+    >
+      <img :src="icon" alt="Icon" class="w-6 h-6" />
+    </div>
 
-    <h3 :class="titleClass">{{ $t(title) }}</h3>
+    <h3 class="text-gray-800 font-semibold">
+      {{ $t(title) }}
+    </h3>
 
-    <p :class="descriptionClass">{{ $t(description) }}</p>
+    <p class="text-sm text-gray-600 leading-relaxed">
+      {{ $t(description) }}
+    </p>
   </div>
 </template>
 
 <script setup lang="ts">
+import { defineProps } from "vue";
+
 const props = defineProps({
   icon: {
     type: String as PropType<string>,
@@ -37,5 +49,3 @@ const props = defineProps({
   },
 });
 </script>
-
-<style></style>

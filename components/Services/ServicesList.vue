@@ -5,7 +5,7 @@ const { data: services } = await useFetch<Service[]>("/api/services");
 </script>
 
 <template>
-  <div class="grid grid-cols-2 gap-x-4 gap-y-8 lg:grid-cols-3 lg:gap-16 text-center">
+  <div class="flex flex-col gap-4 lg:flex-row lg:gap-16">
     <SingleService
       v-for="service in services"
       :key="service.title"

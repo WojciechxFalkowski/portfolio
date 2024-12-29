@@ -8,7 +8,7 @@
       <NuxtLink
         :to="{ hash: link.to }"
         :class="[
-          'text-sm/6 font-semibold flex items-center gap-1 transition-colors',
+          'text-sm/6 flex items-center gap-1 transition-colors',
           activeSection === link.to.replace('#','')
             ? 'text-[#2DD4BF]'
             : 'text-[#0F172A] hover:text-[#2DD4BF]'
@@ -26,20 +26,9 @@ import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 import { navigationLinks } from './config';
 
-/*
- Przykładowe linki w navigationLinks:
- [
-   { label: 'navigationLinks.services', to: '#services' },
-   { label: 'navigationLinks.portfolios', to: '#portfolios' },
-   { label: 'navigationLinks.experience', to: '#experience' },
-   { label: 'navigationLinks.skills', to: '#skills' }
- ]
-*/
-
 const { t } = useI18n();
 const router = useRouter();
 
-// Wczytujemy linki z injection lub z importu:
 const navigation = inject<Ref<any[]>>('navigation', ref(navigationLinks));
 
 // Przechowujemy ID aktualnie "najbardziej" widocznej sekcji

@@ -9,7 +9,7 @@ const imageUrl = "/profile.jpg";
     <div
       class="space-y-4 lg:space-y-8 order-1 md:-order-none mt-4 lg:mt-0 md:text-left lg:max-w-[50%] my-8 lg:my-0"
     >
-      <Subtitle :title="$t('header.greeting')" />
+      <Subtitle :subtitle="$t('header.greeting')" />
 
       <h1 class="text-3xl md:text-4xl lg:text-[40px] text-[#2DD4BF]">
         {{ $t("header.title") }}

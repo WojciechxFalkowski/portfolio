@@ -4,39 +4,27 @@ export default defineI18nConfig(() => ({
     messages: {
         en: {
             header: {
-                greeting: "Hi, I'm Wojtek",
-                title: "Software Engineer",
-                description: "I specialize in creating websites",
+                greeting: "Hello, my name is",
+                title: "Wojciech Falkowski",
+                description: "Software Engineer with 4+ years of experience, who specialize in building modern, responsive, and user-friendly websites.",
                 contact: "Contact me"
             },
             services: {
-                title: 'Programming services',
-                description: 'Every project starts with an idea, and I support you at every stage.', // Every project starts with an idea, and I support you at every stage – from requirements gathering to the final solution.
+                title: 'Specialized in',
+                description: 'Services',
                 offerings: {
                     websites: {
-                        title: 'Websites',
-                        description: 'Responsive websites with seamless content management integration.'
+                        title: 'UI/UX Design',
+                        description: 'Turn what you have in mind of a digital product into reality. For any platform you consider.'
                     },
                     onlineStores: {
-                        title: 'Online stores',
-                        description: 'Online stores optimized for effective product display and sales growth.'
+                        title: 'Application Development',
+                        description: 'Standard designing, building, and implementing your applications with documentation.'
                     },
                     customApplications: {
-                        title: 'Custom applications',
-                        description: 'Scalable web applications tailored to unique requirements.'
+                        title: 'Web Development',
+                        description: 'Create and maintain your websites and also take care of its performance and traffic capacity.'
                     },
-                    uiUxDesign: {
-                        title: 'UI & UX Design',
-                        description: 'Modern, user-friendly interfaces for mobile and desktop.'
-                    },
-                    seoPerformanceSecurity: {
-                        title: 'SEO, Performance & Security',
-                        description: 'Comprehensive audits, SEO, and performance optimization.'
-                    },
-                    analytics: {
-                        title: 'Analytics',
-                        description: 'In-depth tracking of website traffic and user behavior to optimize performance.'
-                    }
                 }
             },
             contact: {
@@ -70,39 +58,27 @@ export default defineI18nConfig(() => ({
         },
         pl: {
             header: {
-                greeting: "Cześć, jestem Wojtek",
-                title: "Software Engineer",
-                description: "Specjalizuję się w tworzeniu stron internetowych",
+                greeting: "Cześć, nazywam się",
+                title: "Wojciech Falkowski",
+                description: "Jestem programistą z ponad 4-letnim doświadczeniem, specjalizujący się w budowaniu nowoczesnych, responsywnych i przyjaznych dla użytkownika stron internetowych.",
                 contact: "Skontaktuj się"
             },
             services: {
-                title: 'Usługi programistyczne',
-                description: 'Każdy projekt zaczyna się od pomysłu, a ja wspieram Cię na każdym jego etapie.', // Każdy projekt zaczyna się od pomysłu, a ja wspieram Cię na każdym jego etapie – od zbierania wymagań po wdrożenie ostatecznego rozwiązania.
+                title: 'Specjalizuje się w',
+                description: 'Usługi',
                 offerings: {
                     websites: {
-                        title: 'Strony internetowe',
-                        description: 'Responsywne strony internetowe z płynną integracją systemu zarządzania treścią.'
+                        title: 'UI/UX Design',
+                        description: 'Przekształcam Twój pomysł cyfrowego produktu w realną wartość dopasowaną do różnych platform.'
                     },
                     onlineStores: {
-                        title: 'Sklepy internetowe',
-                        description: 'Sklepy internetowe zoptymalizowane pod kątem efektywnej prezentacji produktów i wzrostu sprzedaży.'
+                        title: 'Tworzenie aplikacji',
+                        description: 'Projektowanie, budowa i wdrażanie aplikacji wraz z pełną dokumentacją.'
                     },
                     customApplications: {
                         title: 'Dedykowane aplikacje',
-                        description: 'Skalowalne aplikacje internetowe dostosowane do unikalnych wymagań.'
+                        description: 'Tworzę i utrzymuję strony internetowe, dbając jednocześnie o ich wydajność i monitorując ruch na stronie.'
                     },
-                    uiUxDesign: {
-                        title: 'Projektowanie UI & UX',
-                        description: 'Nowoczesne, przyjazne użytkownikom interfejsy na urządzenia mobilne i komputery stacjonarne.'
-                    },
-                    seoPerformanceSecurity: {
-                        title: 'SEO, wydajność i bezpieczeństwo',
-                        description: 'Kompleksowe audyty, SEO oraz optymalizacja wydajności.'
-                    },
-                    analytics: {
-                        title: 'Analityka',
-                        description: 'Dogłębne śledzenie ruchu na stronie i zachowań użytkowników w celu optymalizacji wydajności.'
-                    }
                 }
             },
             contact: {
