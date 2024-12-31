@@ -67,8 +67,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps } from "vue";
-
 const props = defineProps({
   title: String,
   category: String,

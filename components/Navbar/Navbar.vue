@@ -2,22 +2,31 @@
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
 
+const { width } = useWindowSize();
+
 const toggleHamburgerMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
-function handleScroll() {
+
+function handleScrollPosition() {
   if (window.innerWidth > 1024) {
     isScrolled.value = window.scrollY > 0;
+  } else {
+    isScrolled.value = false;
   }
 }
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-  handleScroll();
+  window.addEventListener("scroll", handleScrollPosition);
+  handleScrollPosition();
 });
 
 onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
+  window.removeEventListener("scroll", handleScrollPosition);
+});
+
+watch(width, () => {
+  handleScrollPosition();
 });
 </script>
 

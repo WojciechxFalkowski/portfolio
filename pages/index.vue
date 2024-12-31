@@ -1,19 +1,29 @@
 <template>
-  <ContainerWrapper>
-    <Header />
-  </ContainerWrapper>
+  <div>
+    <ContainerWrapper>
+      <Header />
+    </ContainerWrapper>
 
-  <SectionServices />
+    <SectionServices />
 
-  <ContainerWrapper>
-    <section id="portfolios" class="h-[800px] pt-32">Sekcja Portfolios</section>
-    <section id="experience" class="h-[800px] pt-32">Sekcja Experience</section>
-    <section id="skills" class="h-[800px] pt-32">Sekcja Skills</section>
-  </ContainerWrapper>
+    <ContainerWrapper>
+      <FeaturedPortfolios />
+    </ContainerWrapper>
 
-  <ContainerWrapper>
-    <ContactForm class="mt-20 lg:mt-32" />
-  </ContainerWrapper>
+    <ContainerWrapper>
+      <section id="portfolios" class="h-[800px] pt-32">
+        Sekcja Portfolios
+      </section>
+      <section id="experience" class="h-[800px] pt-32">
+        Sekcja Experience
+      </section>
+      <section id="skills" class="h-[800px] pt-32">Sekcja Skills</section>
+    </ContainerWrapper>
+
+    <ContainerWrapper>
+      <ContactForm class="mt-20 lg:mt-32" />
+    </ContainerWrapper>
+  </div>
 </template>
 
 <script setup lang="ts"></script>
