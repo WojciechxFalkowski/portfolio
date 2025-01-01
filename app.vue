@@ -35,9 +35,16 @@ useSeoMeta({
 </template>
 
 <style lang="scss">
+@font-face {
+  font-family: Inter;
+  src: url(~/public/InterFont.ttf);
+}
+
 html {
   scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
+
 // body {
 //   background: linear-gradient(to bottom, #f5fcff 0%, #ffffff 100%);
 // }
