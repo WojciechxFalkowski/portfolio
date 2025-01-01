@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div>
     <div class="flex flex-col gap-4 text-center lg:text-left">
       <component
         :is="headingTag"

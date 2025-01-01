@@ -5,6 +5,7 @@
         :title="$t('services.title')"
         :subtitle="$t('services.description')"
         headingTag="h2"
+        class="flex justify-center"
       />
 
       <ServicesList class="mt-8 lg:mt-16" />

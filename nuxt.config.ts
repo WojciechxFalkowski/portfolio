@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@vee-validate/nuxt',
     '@nuxtjs/i18n',
     '@nuxtjs/sanity',
+    "@vueuse/nuxt",
   ],
   sanity: {
     projectId: process.env.NUXT_SANITY_PROJECT_ID,

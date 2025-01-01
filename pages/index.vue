@@ -10,13 +10,9 @@
       <FeaturedPortfolios />
     </ContainerWrapper>
 
+    <WorkExperience />
+
     <ContainerWrapper>
-      <section id="portfolios" class="h-[800px] pt-32">
-        Sekcja Portfolios
-      </section>
-      <section id="experience" class="h-[800px] pt-32">
-        Sekcja Experience
-      </section>
       <section id="skills" class="h-[800px] pt-32">Sekcja Skills</section>
     </ContainerWrapper>
 

@@ -1,10 +1,13 @@
 <template>
-  <section class="my-8 lg:my-12 flex flex-wrap justify-between relative gap-4 lg:gap-0">
+  <section
+    id="portfolios"
+    class="py-8 lg:py-12 flex flex-wrap justify-between relative gap-4 lg:gap-0"
+  >
     <TitleWithSubtitle
       :title="'Featured Portfolios'"
       :subtitle="'MY WORKS'"
       headingTag="h2"
-      class="basis-full lg:basis-auto"
+      class="flex justify-center basis-full lg:basis-auto"
     />
 
     <div
@@ -13,15 +16,18 @@
       <div class="flex gap-4 items-center lg:items-start">
         <button
           @click="goPrev"
-          class="w-10 h-10 flex justify-center items-center p-2 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-200 transition-colors"
+          class="w-10 h-10 flex justify-center items-center p-2 rounded-full bg-teal-100 text-teal-600 transition-colors"
+          :class="isFirstSlide ? 'opacity-50' : 'hover:bg-teal-200'"
           aria-label="Previous"
           :disabled="isFirstSlide"
         >
           <IconArrowRight class="w-3 h-3 rotate-180" />
         </button>
+
         <button
           @click="goNext"
-          class="w-10 h-10 flex justify-center items-center p-2 rounded-full bg-teal-100 text-teal-600 hover:bg-teal-200 transition-colors"
+          class="w-10 h-10 flex justify-center items-center p-2 rounded-full bg-teal-100 text-teal-600 transition-colors"
+          :class="isLastSlide ? 'opacity-50' : 'hover:bg-teal-200'"
           aria-label="Next"
           :disabled="isLastSlide"
         >
