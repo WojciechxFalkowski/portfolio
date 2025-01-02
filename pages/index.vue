@@ -13,7 +13,7 @@
     <WorkExperience />
 
     <ContainerWrapper>
-      <section id="skills" class="h-[800px] pt-32">Sekcja Skills</section>
+      <EducationAndSkillsSection />
     </ContainerWrapper>
 
     <ContainerWrapper>
