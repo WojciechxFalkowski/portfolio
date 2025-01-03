@@ -16,9 +16,7 @@
       <EducationAndSkillsSection />
     </ContainerWrapper>
 
-    <ContainerWrapper>
-      <ContactForm class="mt-20 lg:mt-32" />
-    </ContainerWrapper>
+    <ContactForm />
   </div>
 </template>
 

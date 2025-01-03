@@ -14,6 +14,10 @@ export const navigationLinks = [
     {
       label: "navigationLinks.skills",
       to: "#skills"
+    },
+    {
+      label: "navigationLinks.contact",
+      to: "#contact"
     }
   ];
   

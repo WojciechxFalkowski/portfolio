@@ -25,8 +25,9 @@ const imageUrl = "/profile.jpg";
         {{ $t("header.contact") }}
       </button>
 
-      <div class="flex gap-8">
-        <a href="https://github.com/WojciechxFalkowski" target="_blank"
+      <div class="flex">
+        <Social />
+        <!-- <a href="https://github.com/WojciechxFalkowski" target="_blank"
           ><IconGithub class="w-5 h-5" />
         </a>
 
@@ -35,7 +36,7 @@ const imageUrl = "/profile.jpg";
           target="_blank"
         >
           <IconLinkedin class="w-5 h-5" />
-        </a>
+        </a> -->
       </div>
     </div>
 

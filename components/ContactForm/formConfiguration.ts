@@ -6,15 +6,15 @@ import { ComponentType, Theme } from "../Button/Button.props";
 export const formConfiguration: GenericFormObject = {
     formClass: "grid grid-cols-12 gap-4",
     submitButton: {
-        name: "form.send",
+        name: "contactForm.button",
         componentType: ComponentType.Button,
-        class: "col-span-12",
+        class: "col-span-12 w-full",
         theme: Theme.Primary,
     },
     fields: [
         {
             id: "name",
-            name: "form.name",
+            name: "contactForm.name",
             as: FieldType.input,
             type: "text",
             initialValue: "",
@@ -23,7 +23,7 @@ export const formConfiguration: GenericFormObject = {
         },
         {
             id: "email",
-            name: "form.email",
+            name: "contactForm.email",
             as: FieldType.input,
             type: "text",
             initialValue: "",
@@ -32,7 +32,7 @@ export const formConfiguration: GenericFormObject = {
         },
         {
             id: "message",
-            name: "form.message",
+            name: "contactForm.message",
             as: FieldType.textarea,
             type: "text",
             initialValue: "",
