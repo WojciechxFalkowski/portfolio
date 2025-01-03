@@ -39,14 +39,16 @@ const contactInfo = computed<ContactInfo[]>(
 );
 
 const contactFormLabels = computed(() => {
-  return (messages.value[locale.value]?.contactForm as {
-    title: string;
-    subtitle: string;
-    name: string;
-    email: string;
-    message: string;
-    button: string;
-  }) || {};
+  return (
+    (messages.value[locale.value]?.contactForm as {
+      title: string;
+      subtitle: string;
+      name: string;
+      email: string;
+      message: string;
+      button: string;
+    }) || {}
+  );
 });
 </script>
 
@@ -84,8 +86,19 @@ const contactFormLabels = computed(() => {
             </div>
             <div>
               <p class="text-[#0F172A] font-medium">{{ info.type }}</p>
-
-              <p class="text-[#656D72]">{{ info.value }}</p>
+              <div v-if="['Telefon', 'Phone'].includes(info.type)">
+                <a :href="`tel:${info.value}`" class="text-[#0F172A]">
+                  {{ info.value }}
+                </a>
+              </div>
+              <div v-else-if="['E-Mail', 'E-Mail'].includes(info.type)">
+                <a :href="`mailto:${info.value}`" class="text-[#0F172A]">
+                  {{ info.value }}
+                </a>
+              </div>
+              <div v-else>
+                <p class="text-[#656D72]">{{ info.value }}</p>
+              </div>
             </div>
           </div>
         </div>
