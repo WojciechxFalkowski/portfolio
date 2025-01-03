@@ -1,7 +1,7 @@
 <template>
   <section
     id="portfolios"
-    class="py-8 lg:py-12 flex flex-wrap justify-between relative gap-4 lg:gap-0"
+    class="py-8 lg:py-32 flex flex-wrap justify-between relative gap-4 lg:gap-0"
   >
     <TitleWithSubtitle
       :title="'Featured Portfolios'"

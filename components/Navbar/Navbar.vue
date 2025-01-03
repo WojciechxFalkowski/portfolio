@@ -64,7 +64,7 @@ watch(width, () => {
 
 <style>
 .scrolled {
-  width: 600px;
+  width: 720px;
   /* margin: 0 auto; */
   top: 16px;
   border: 1px solid #d9d9d9;

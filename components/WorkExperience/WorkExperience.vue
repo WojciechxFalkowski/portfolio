@@ -68,48 +68,30 @@ interface Job {
   tasks: string[];
 }
 
-const { t, messages, locale } = useI18n();
-
-// Pobranie danych o "work" z tłumaczeń
+const { messages, locale } = useI18n();
 
 const jobs = computed<Job[]>(
   () => (messages.value[locale.value]?.work as Job[]) || []
 );
-// Mapowanie danych na odpowiednią strukturę
 
-// Indeks otwartego akordeonu
-const activeIndex = ref(0);
+const activeIndex = ref<number>(0);
 
-function toggleAccordion(index) {
-  activeIndex.value = activeIndex.value === index ? null : index;
+function toggleAccordion(index: number) {
+  activeIndex.value = activeIndex.value === index ? 0 : index;
 }
 </script>
 
-<style scoped>
-/* Zwykły font + kolory */
+<style>
 .work-experiences-container {
-  /* display: flex;
-  flex-wrap: wrap; */
   color: #2c2c2c;
 }
 
-/* Lista: mobile-first */
 .experience-list {
-  /* flex-basis: 100%; */
   list-style: none;
   padding: 0;
-  position: relative; /* Baza do absolute na desktop */
-  /* max-width: 600px;  */
+  position: relative;
 }
 
-/* Każdy <li> */
-.experience-item {
-  /* margin-bottom: 1rem; */
-  /* padding-bottom: 1rem; */
-  /* border-bottom: 1px solid #eee; */
-}
-
-/* Przycisk z logo + nazwą */
 .company-header {
   display: flex;
   align-items: center;
@@ -125,29 +107,24 @@ function toggleAccordion(index) {
   }
 }
 
-/* Logo */
 .company-logo {
   width: 32px;
   height: 32px;
   object-fit: contain;
 }
 
-/* Nazwa */
 .company-title {
   font-weight: 600;
 }
 
-/* Strzałka z prawej */
 .arrow {
   margin-left: auto;
 }
 
-/* Treść opisu – mobile: normalnie pod spodem, nic nadzwyczajnego. */
 .details {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  /* border-left: 3px solid #eee; */
   padding-left: 8px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -156,7 +133,6 @@ function toggleAccordion(index) {
     gap: 16px;
     padding-top: 0;
     padding-bottom: 0;
-    /* padding-left: 128px; */
   }
 }
 
@@ -168,38 +144,29 @@ function toggleAccordion(index) {
   opacity: 0;
 }
 
-/* Stanowisko */
 .job-position {
   font-size: 1.25rem;
   font-weight: 600;
-  /* margin-bottom: 0.25rem; */
 }
 
-/* Lokalizacja, daty */
 .job-location {
   color: #656d72;
-  /* margin-bottom: 0.25rem; */
   font-size: 14px;
   @media (min-width: 1024px) {
-    /* font-size: 16px; */
   }
 }
 .job-date {
   color: #656d72;
-  /* margin-bottom: 1rem; */
   font-size: 14px;
   @media (min-width: 1024px) {
-    /* font-size: 16px; */
   }
 }
 
-/* Tagi (technologie) */
 .tags-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  /* margin: 0 0 1rem 0; */
   padding: 0;
 
   @media (min-width: 1024px) {

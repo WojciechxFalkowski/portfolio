@@ -12,6 +12,8 @@
 
     <WorkExperience />
 
+    <Testimonials />
+
     <ContainerWrapper>
       <EducationAndSkillsSection />
     </ContainerWrapper>
