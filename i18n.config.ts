@@ -27,7 +27,54 @@ export default defineI18nConfig(() => ({
                     },
                 }
             },
-            "contactForm": {
+            portfolios: {
+                title: 'Featured Portfolios',
+                description: 'My works',
+                projects: [
+                    {
+                        title: "Travel",
+                        image: "portfolio_1.jpg",
+                        tags: [
+                            {
+                                title: "Single Page Application",
+                                link: "",
+                                icon: "",
+                            },
+                            { title: "HTML", link: "", icon: "" },
+                            { title: "CSS", link: "", icon: "" },
+                            {
+                                title: "",
+                                link: "https://wojciechxfalkowski.github.io/Travel-website",
+                                icon: "",
+                            },
+                        ],
+                    },
+                    {
+                        title: "Trip Guide",
+                        image: "portfolio_2.jpg",
+                        tags: [
+                            { title: "Vue", link: "", icon: "" },
+                            { title: "Bootstrap", link: "", icon: "" },
+                            { title: "CMS", link: "", icon: "" },
+                            { title: "Docker", link: "", icon: "" },
+                            { title: "", link: "http://141.144.224.51", icon: "" },
+
+                        ],
+                    },
+                    {
+                        title: "Well Rent",
+                        image: "portfolio_3.jpg",
+                        tags: [
+                            { title: "Vue", link: "", icon: "" },
+                            { title: "Custom CMS", link: "", icon: "" },
+                            // { title: "Case study", link: "", icon: "" },
+                            { title: "", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
+
+                        ],
+                    },
+                ]
+            },
+            contactForm: {
                 "title": "Contact",
                 "subtitle": "Text me",
                 "name": "Name",
@@ -35,7 +82,7 @@ export default defineI18nConfig(() => ({
                 "message": "Message",
                 "button": "Send Message"
             },
-            "contactInfo": [
+            contactInfo: [
                 {
                     "type": "Address",
                     "value": "Warsaw, Poland",
@@ -67,158 +114,148 @@ export default defineI18nConfig(() => ({
                 title: 'My portfolio',
                 subtitle: 'Recent projects'
             },
-            testimonials: [
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
-                    message:
-                        "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
-                    name: "Javlon Khalimjanov",
-                    role: "Front-end Developer",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
-                    message:
-                        "I'm glad I decided to work with you. The project was delivered on time with all the requirements.",
-                    name: "Michał Krawczycki",
-                    role: "Founder & Real estate agent - WellRent",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
-                    message:
-                        "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
-                    name: "Xavier Zielinski",
-                    role: "Founder & CEO - CityEcoView",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
-                    message:
-                        "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
-                    name: "Javlon Khalimjanov",
-                    role: "Front-end Developer",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
-                    message:
-                        "I'm glad I decided to work with you. The project was delivered on time with all the requirements.",
-                    name: "Michał Krawczycki",
-                    role: "Founder & Real estate agent - WellRent",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
-                    message:
-                        "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
-                    name: "Xavier Zielinski",
-                    role: "Founder & CEO - CityEcoView",
-                },
-            ],
-            work: [
-                {
-                    id: 1,
-                    name: "Samsung",
-                    title: "Software Engineer Samsung",
-                    location: "Warsaw, Poland",
-                    date: "June 2024 - Present · Full-time",
-                    logo: "logo_samsung.jpg",
-                    technologies: [
-                        "JavaScript",
-                        "TypeScript",
-                        "Vue",
-                        "Java",
-                        "Sprint boot",
-                        "PostgreSQL",
-                    ],
-                    tasks: [
-                        "Improving overall website performance for mobile users.",
-                        "Collaborate with back-end developers and web designers to improve usability. Collaborate with back-end developers and web designers to improve usability.",
-                        "Add voice search feature for mobile app.",
-                        "Developing an admin panel to manage contents, users, products.",
-                    ],
-                },
-                {
-                    id: 2,
-                    name: "Ready4S",
-                    title: "Frontend Developer at Ready4S",
-                    location: "Krakow, Poland",
-                    date: "2022 - 2024",
-                    logo: "logo_ready4s.jpg",
-                    technologies: ["JavaScript", "TypeScript", "Vue"],
-                    tasks: [
-                        "Built new features in Vue + TypeScript.",
-                        "Optimized app performance.",
-                        "Refactored legacy JavaScript code.",
-                    ],
-                },
+            testimonialSection: {
+                title: 'Testimonials',
+                subtitle: 'MY CLIENTS',
+                testimonials: [
+                    {
+                        avatar:
+                            "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
+                        message:
+                            "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
+                        name: "Javlon Khalimjanov",
+                        role: "Front-end Developer",
+                    },
+                    {
+                        avatar:
+                            "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
+                        message:
+                            "I'm glad I decided to work with you. The project was delivered on time with all the requirements.",
+                        name: "Michał Krawczycki",
+                        role: "Founder & Real estate agent - WellRent",
+                    },
+                    {
+                        avatar:
+                            "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
+                        message:
+                            "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
+                        name: "Xavier Zielinski",
+                        role: "Founder & CEO - CityEcoView",
+                    }
+                ],
+            },
+            workExperienceSection: {
+                title: 'Work Experices',
+                subtitle: 'career path',
+                work: [
+                    {
+                        id: 1,
+                        name: "Samsung",
+                        title: "Software Engineer Samsung",
+                        location: "Warsaw, Poland",
+                        date: "June 2024 - Present · Full-time",
+                        logo: "logo_samsung.jpg",
+                        technologies: [
+                            "JavaScript",
+                            "TypeScript",
+                            "Vue",
+                            "Java",
+                            "Sprint boot",
+                            "PostgreSQL",
+                        ],
+                        tasks: [
+                            "Improving overall website performance for mobile users.",
+                            "Collaborate with back-end developers and web designers to improve usability. Collaborate with back-end developers and web designers to improve usability.",
+                            "Add voice search feature for mobile app.",
+                            "Developing an admin panel to manage contents, users, products.",
+                        ],
+                    },
+                    {
+                        id: 2,
+                        name: "Ready4S",
+                        title: "Frontend Developer at Ready4S",
+                        location: "Krakow, Poland",
+                        date: "2022 - 2024",
+                        logo: "logo_ready4s.jpg",
+                        technologies: ["JavaScript", "TypeScript", "Vue"],
+                        tasks: [
+                            "Built new features in Vue + TypeScript.",
+                            "Optimized app performance.",
+                            "Refactored legacy JavaScript code.",
+                        ],
+                    },
 
-                {
-                    id: 3,
-                    name: "E Net Production",
-                    title: "Frontend Developer at Ready4S",
-                    location: "Krakow, Poland",
-                    date: "2022 - 2024",
-                    logo: "logo_enetproduction.jpg",
+                    {
+                        id: 3,
+                        name: "E Net Production",
+                        title: "Frontend Developer at Ready4S",
+                        location: "Krakow, Poland",
+                        date: "2022 - 2024",
+                        logo: "logo_enetproduction.jpg",
 
-                    technologies: ["JavaScript", "TypeScript", "Vue"],
-                    tasks: [
-                        "Built new features in Vue + TypeScript.",
-                        "Optimized app performance.",
-                        "Refactored legacy JavaScript code.",
-                    ],
-                },
-                {
-                    id: 4,
-                    name: "CityEcoView",
-                    title: "Frontend Developer at Ready4S",
-                    location: "Krakow, Poland",
-                    date: "2022 - 2024",
-                    logo: "icon_cityecoview.png",
-                    technologies: ["JavaScript", "TypeScript", "Vue"],
-                    tasks: [
-                        "Built new features in Vue + TypeScript.",
-                        "Optimized app performance.",
-                        "Refactored legacy JavaScript code.",
-                    ],
-                },
-                {
-                    id: 5,
-                    name: "Move Closer",
-                    title: "Frontend Developer at Ready4S",
-                    location: "Krakow, Poland",
-                    date: "2022 - 2024",
-                    logo: "logo_move_close.jpg",
-                    technologies: ["JavaScript", "TypeScript", "Vue"],
-                    tasks: [
-                        "Built new features in Vue + TypeScript.",
-                        "Optimized app performance.",
-                        "Refactored legacy JavaScript code.",
-                    ],
-                },
-            ],
-            "education": [
-                {
-                    "id": 1,
-                    "institution": "WIT Academy",
-                    "degree": "Master's degree",
-                    "field": "Software Engineering",
-                    "date": "2022 - 2024",
-                    "grade": "5",
-                    "logo": "akademia_wit_logo.jpg"
-                },
-                {
-                    "id": 2,
-                    "institution": "WIT Academy",
-                    "degree": "Bachelor's degree",
-                    "field": "Computer Engineering",
-                    "date": "2018 - 2022",
-                    "grade": "5",
-                    "logo": "akademia_wit_logo.jpg"
-                }
-            ],
+                        technologies: ["JavaScript", "TypeScript", "Vue"],
+                        tasks: [
+                            "Built new features in Vue + TypeScript.",
+                            "Optimized app performance.",
+                            "Refactored legacy JavaScript code.",
+                        ],
+                    },
+                    {
+                        id: 4,
+                        name: "CityEcoView",
+                        title: "Frontend Developer at Ready4S",
+                        location: "Krakow, Poland",
+                        date: "2022 - 2024",
+                        logo: "icon_cityecoview.png",
+                        technologies: ["JavaScript", "TypeScript", "Vue"],
+                        tasks: [
+                            "Built new features in Vue + TypeScript.",
+                            "Optimized app performance.",
+                            "Refactored legacy JavaScript code.",
+                        ],
+                    },
+                    {
+                        id: 5,
+                        name: "Move Closer",
+                        title: "Frontend Developer at Ready4S",
+                        location: "Krakow, Poland",
+                        date: "2022 - 2024",
+                        logo: "logo_move_close.jpg",
+                        technologies: ["JavaScript", "TypeScript", "Vue"],
+                        tasks: [
+                            "Built new features in Vue + TypeScript.",
+                            "Optimized app performance.",
+                            "Refactored legacy JavaScript code.",
+                        ],
+                    },
+                ],
+            },
+            educationSection: {
+                grade: 'Ocena',
+                description: "Od ponad 4 lat nieustannie uczę się z zakresu frontendu oraz eksperymentuję z nowymi technologiami i frameworkami. Tutaj możesz zobaczyć podsumowanie moich umiejętności.",
+                title: 'Edukacja & Umiejętności',
+                subtitle: 'Ścieżka rozwoju',
+                education: [
+                    {
+                        "id": 1,
+                        "institution": "WIT Academy",
+                        "degree": "Master's degree",
+                        "field": "Software Engineering",
+                        "date": "2022 - 2024",
+                        "grade": "5",
+                        "logo": "akademia_wit_logo.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "institution": "WIT Academy",
+                        "degree": "Bachelor's degree",
+                        "field": "Computer Engineering",
+                        "date": "2018 - 2022",
+                        "grade": "5",
+                        "logo": "akademia_wit_logo.jpg"
+                    }
+                ],
+            },
             common: {
                 privacyPolicy: 'Privacy policy',
                 cookiesSettings: 'Cookies settings',
@@ -251,7 +288,52 @@ export default defineI18nConfig(() => ({
                     },
                 }
             },
-            "contactForm": {
+            portfolios: {
+                title: 'Wyróżnione Portfolio',
+                description: 'Moje prace',
+                projects: [
+                    {
+                        title: "Strona internetowa podróży",
+                        image: "portfolio_1.jpg",
+                        tags: [
+                            {
+                                title: "Statyczna strona",
+                                link: "",
+                                icon: "",
+                            },
+                            { title: "HTML", link: "", icon: "" },
+                            { title: "CSS", link: "", icon: "" },
+                            {
+                                title: "",
+                                link: "https://wojciechxfalkowski.github.io/Travel-website",
+                                icon: "",
+                            },
+                        ],
+                    },
+                    {
+                        title: "Trip Guide",
+                        image: "portfolio_2.jpg",
+                        tags: [
+                            { title: "Vue", link: "", icon: "" },
+                            { title: "Bootstrap", link: "", icon: "" },
+                            { title: "CMS", link: "", icon: "" },
+                            { title: "Docker", link: "", icon: "" },
+                            { title: "", link: "http://141.144.224.51", icon: "" },
+                        ],
+                    },
+                    {
+                        title: "Well Rent",
+                        image: "portfolio_3.jpg",
+                        tags: [
+                            { title: "Vue", link: "", icon: "" },
+                            { title: "Autorski CMS", link: "", icon: "" },
+                            // { title: "Studium przypadku", link: "", icon: "" },
+                            { title: "", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
+                        ],
+                    },
+                ]
+            },
+            contactForm: {
                 "title": "Kontakt",
                 "subtitle": "Napisz do mnie",
                 "name": "Imię",
@@ -259,7 +341,7 @@ export default defineI18nConfig(() => ({
                 "message": "Wiadomość",
                 "button": "Wyślij wiadomość"
             },
-            "contactInfo": [
+            contactInfo: [
                 {
                     "type": "Adres",
                     "value": "Warszawa, Polska",
@@ -291,153 +373,143 @@ export default defineI18nConfig(() => ({
                 title: 'Moje portfolio',
                 subtitle: 'Ostatnie projeky'
             },
-            testimonials: [
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
-                    message:
-                        "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
-                    name: "Javlon Khalimjanov",
-                    role: "Programista Front-end",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
-                    message:
-                        "Cieszę się, że zdecydowałem się na współpracę z Tobą. Projekt został dostarczony na czas, zgodnie ze wszystkimi wymaganiami.",
-                    name: "Michał Krawczycki",
-                    role: "Założyciel i agent nieruchomości - WellRent",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
-                    message:
-                        "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
-                    name: "Xavier Zielinski",
-                    role: "Założyciel i CEO - CityEcoView",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
-                    message:
-                        "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
-                    name: "Javlon Khalimjanov",
-                    role: "Programista Front-end",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
-                    message:
-                        "Cieszę się, że zdecydowałem się na współpracę z Tobą. Projekt został dostarczony na czas, zgodnie ze wszystkimi wymaganiami.",
-                    name: "Michał Krawczycki",
-                    role: "Założyciel i agent nieruchomości - WellRent",
-                },
-                {
-                    avatar:
-                        "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
-                    message:
-                        "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
-                    name: "Xavier Zielinski",
-                    role: "Założyciel i CEO - CityEcoView",
-                },
-            ],
-            work: [
-                {
-                    id: 1,
-                    name: "Samsung",
-                    title: "Software Engineer Samsung",
-                    location: "Warszawa, Polska",
-                    date: "June 2024 - Present · Full-time",
-                    logo: "logo_samsung.jpg",
-                    technologies: [
-                        "JavaScript",
-                        "TypeScript",
-                        "Vue",
-                        "Java",
-                        "Sprint boot",
-                        "PostgreSQL",
-                    ],
-                    tasks: [
-                        "Improving overall website performance for mobile users.",
-                        "Collaborate with back-end developers and web designers to improve usability. Collaborate with back-end developers and web designers to improve usability.",
-                        "Add voice search feature for mobile app.",
-                        "Developing an admin panel to manage contents, users, products.",
-                    ],
-                },
-                {
-                    id: 2,
-                    name: "Ready4S",
-                    title: "Frontend Developer at Ready4S",
-                    location: "Krakow, Poland",
-                    date: "2022 - 2024",
-                    logo: "logo_ready4s.jpg", technologies: ["JavaScript", "TypeScript", "Vue"],
-                    tasks: [
-                        "Built new features in Vue + TypeScript.",
-                        "Optimized app performance.",
-                        "Refactored legacy JavaScript code.",
-                    ],
-                },
-                {
-                    id: 3,
-                    name: "E Net Production",
-                    title: "Frontend Developer at Ready4S",
-                    location: "Krakow, Poland",
-                    date: "2022 - 2024",
-                    logo: "logo_enetproduction.jpg", technologies: ["JavaScript", "TypeScript", "Vue"],
-                    tasks: [
-                        "Built new features in Vue + TypeScript.",
-                        "Optimized app performance.",
-                        "Refactored legacy JavaScript code.",
-                    ],
-                },
-                {
-                    id: 4,
-                    name: "CityEcoView",
-                    title: "Frontend Developer at Ready4S",
-                    location: "Krakow, Poland",
-                    date: "2022 - 2024",
-                    logo: "icon_cityecoview.png", technologies: ["JavaScript", "TypeScript", "Vue"],
-                    tasks: [
-                        "Built new features in Vue + TypeScript.",
-                        "Optimized app performance.",
-                        "Refactored legacy JavaScript code.",
-                    ],
-                },
-                {
-                    id: 5,
-                    name: "Move Closer",
-                    title: "Frontend Developer at Ready4S",
-                    location: "Krakow, Poland",
-                    date: "2022 - 2024",
-                    logo: "logo_move_close.jpg",
-                    technologies: ["JavaScript", "TypeScript", "Vue"],
-                    tasks: [
-                        "Built new features in Vue + TypeScript.",
-                        "Optimized app performance.",
-                        "Refactored legacy JavaScript code.",
-                    ],
-                }
-            ],
-            "education": [
-                {
-                    "id": 1,
-                    "institution": "Akademia WIT",
-                    "degree": "Magister",
-                    "field": "Inżynieria oprogramowania",
-                    "date": "2022 - 2024",
-                    "grade": "5",
-                    "logo": "akademia_wit_logo.jpg"
-                },
-                {
-                    "id": 2,
-                    "institution": "Akademia WIT",
-                    "degree": "Inżynier",
-                    "field": "Inżynieria komputerowa",
-                    "date": "2018 - 2022",
-                    "grade": "5",
-                    "logo": "akademia_wit_logo.jpg"
-                }
-            ],
+            testimonialSection: {
+                title: 'Referencje',
+                subtitle: 'Klienci',
+                testimonials: [
+                    {
+                        avatar:
+                            "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
+                        message:
+                            "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
+                        name: "Javlon Khalimjanov",
+                        role: "Programista Front-end",
+                    },
+                    {
+                        avatar:
+                            "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
+                        message:
+                            "Cieszę się, że zdecydowałem się na współpracę z Tobą. Projekt został dostarczony na czas, zgodnie ze wszystkimi wymaganiami.",
+                        name: "Michał Krawczycki",
+                        role: "Założyciel i agent nieruchomości - WellRent",
+                    },
+                    {
+                        avatar:
+                            "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
+                        message:
+                            "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
+                        name: "Xavier Zielinski",
+                        role: "Założyciel i CEO - CityEcoView",
+                    },
+                ],
+            },
+            workExperienceSection: {
+                title: 'Doświadczenie',
+                subtitle: 'Ścieżka kariery',
+                work: [
+                    {
+                        id: 1,
+                        name: "Samsung",
+                        title: "Software Engineer Samsung",
+                        location: "Warszawa, Polska",
+                        date: "June 2024 - Present · Full-time",
+                        logo: "logo_samsung.jpg",
+                        technologies: [
+                            "JavaScript",
+                            "TypeScript",
+                            "Vue",
+                            "Java",
+                            "Sprint boot",
+                            "PostgreSQL",
+                        ],
+                        tasks: [
+                            "Improving overall website performance for mobile users.",
+                            "Collaborate with back-end developers and web designers to improve usability. Collaborate with back-end developers and web designers to improve usability.",
+                            "Add voice search feature for mobile app.",
+                            "Developing an admin panel to manage contents, users, products.",
+                        ],
+                    },
+                    {
+                        id: 2,
+                        name: "Ready4S",
+                        title: "Frontend Developer at Ready4S",
+                        location: "Krakow, Poland",
+                        date: "2022 - 2024",
+                        logo: "logo_ready4s.jpg", technologies: ["JavaScript", "TypeScript", "Vue"],
+                        tasks: [
+                            "Built new features in Vue + TypeScript.",
+                            "Optimized app performance.",
+                            "Refactored legacy JavaScript code.",
+                        ],
+                    },
+                    {
+                        id: 3,
+                        name: "E Net Production",
+                        title: "Frontend Developer at Ready4S",
+                        location: "Krakow, Poland",
+                        date: "2022 - 2024",
+                        logo: "logo_enetproduction.jpg", technologies: ["JavaScript", "TypeScript", "Vue"],
+                        tasks: [
+                            "Built new features in Vue + TypeScript.",
+                            "Optimized app performance.",
+                            "Refactored legacy JavaScript code.",
+                        ],
+                    },
+                    {
+                        id: 4,
+                        name: "CityEcoView",
+                        title: "Frontend Developer at Ready4S",
+                        location: "Krakow, Poland",
+                        date: "2022 - 2024",
+                        logo: "icon_cityecoview.png", technologies: ["JavaScript", "TypeScript", "Vue"],
+                        tasks: [
+                            "Built new features in Vue + TypeScript.",
+                            "Optimized app performance.",
+                            "Refactored legacy JavaScript code.",
+                        ],
+                    },
+                    {
+                        id: 5,
+                        name: "Move Closer",
+                        title: "Frontend Developer at Ready4S",
+                        location: "Krakow, Poland",
+                        date: "2022 - 2024",
+                        logo: "logo_move_close.jpg",
+                        technologies: ["JavaScript", "TypeScript", "Vue"],
+                        tasks: [
+                            "Built new features in Vue + TypeScript.",
+                            "Optimized app performance.",
+                            "Refactored legacy JavaScript code.",
+                        ],
+                    }
+                ],
+            },
+            educationSection: {
+                grade: 'Grade',
+                description: "For 4+ years I have been continuously learning in the field of front-end and experimenting with new technologies and frameworks. Here you can see a summary of my skills.",
+                title: 'Education & Skills',
+                subtitle: 'learning path',
+                education: [
+                    {
+                        "id": 1,
+                        "institution": "Akademia WIT",
+                        "degree": "Magister",
+                        "field": "Inżynieria oprogramowania",
+                        "date": "2022 - 2024",
+                        "grade": "5",
+                        "logo": "akademia_wit_logo.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "institution": "Akademia WIT",
+                        "degree": "Inżynier",
+                        "field": "Inżynieria komputerowa",
+                        "date": "2018 - 2022",
+                        "grade": "5",
+                        "logo": "akademia_wit_logo.jpg"
+                    }
+                ],
+            },
             common: {
                 privacyPolicy: 'Polityka prywatności',
                 cookiesSettings: 'Ustawienia cookies',

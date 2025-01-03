@@ -5,8 +5,8 @@
   >
     <ContainerWrapper>
       <TitleWithSubtitle
-        :title="'Work Experices'"
-        :subtitle="'career path'"
+        :title="$t('workExperienceSection.title')"
+        :subtitle="$t('workExperienceSection.subtitle')"
         headingTag="h2"
       />
 
@@ -71,7 +71,10 @@ interface Job {
 const { messages, locale } = useI18n();
 
 const jobs = computed<Job[]>(
-  () => (messages.value[locale.value]?.work as Job[]) || []
+  () =>
+    ((
+      messages.value[locale.value] as { workExperienceSection: { work: Job[] } }
+    )?.workExperienceSection.work as Job[]) || []
 );
 
 const activeIndex = ref<number>(0);

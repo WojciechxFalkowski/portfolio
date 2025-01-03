@@ -2,8 +2,8 @@
   <section id="testimonials" class="py-8 lg:py-32 bg-[#FBFBFB]">
     <ContainerWrapper>
       <TitleWithSubtitle
-        :title="'Testimonials'"
-        :subtitle="'MY CLIENTS'"
+        :title="$t('testimonialSection.title')"
+        :subtitle="$t('testimonialSection.subtitle')"
         headingTag="h2"
         class="flex justify-center"
       />
@@ -93,7 +93,12 @@ const carousel = ref<InstanceType<typeof Carousel> | null>(null);
 const { messages, locale } = useI18n();
 
 const testimonials = computed<Testimonial[]>(
-  () => (messages.value[locale.value]?.testimonials as Testimonial[]) || []
+  () =>
+    ((
+      messages.value[locale.value] as {
+        testimonialSection: { testimonials: Testimonial[] };
+      }
+    )?.testimonialSection.testimonials as Testimonial[]) || []
 );
 
 const carouselBreakpoints = {

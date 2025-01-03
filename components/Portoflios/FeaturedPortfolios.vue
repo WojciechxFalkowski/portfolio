@@ -4,8 +4,8 @@
     class="py-8 lg:py-32 flex flex-wrap justify-between relative gap-4 lg:gap-0"
   >
     <TitleWithSubtitle
-      :title="'Featured Portfolios'"
-      :subtitle="'MY WORKS'"
+      :title="$t('portfolios.title')"
+      :subtitle="$t('portfolios.description')"
       headingTag="h2"
       class="flex justify-center basis-full lg:basis-auto"
     />
@@ -66,7 +66,7 @@
             {{ item.title }}
           </h3>
 
-          <div class="flex flex-wrap items-center gap-3 basis-full">
+          <div class="flex flex-wrap items-center gap-2 basis-full">
             <Tag
               v-for="(tag, idx) in item.tags"
               :key="idx"
@@ -82,83 +82,39 @@
 </template>
 
 <script setup lang="ts">
+interface PortfolioProject {
+  title: string;
+  image: string;
+  tags: PortfolioTag[];
+}
+
+interface PortfolioTag {
+  title: string;
+  link: string;
+  icon: string;
+}
+
 import {
   Carousel,
   Slide,
   Navigation as CarouselNavigation,
 } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
+
 const carousel = ref<InstanceType<typeof Carousel> | null>(null);
 
-// Przykładowe dane (mock)
-const portfolios = ref([
-  {
-    title: "Hotel Agency Website",
-    image: "https://picsum.photos/640/640?random=1",
-    tags: [
-      { title: "Vue", link: "", icon: "" },
-      { title: "", link: "http://141.144.224.51/", icon: "" },
-    ],
-  },
-  {
-    title: "Real Estate Website",
-    image: "https://picsum.photos/640/640?random=2",
-    tags: [
-      { title: "Vue", link: "", icon: "" },
-      { title: "Custom CMS", link: "", icon: "" },
-      { title: "Case study", link: "", icon: "" },
-      { title: "", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
-    ],
-  },
-  {
-    title: "Travel Website",
-    image: "https://picsum.photos/640/640?random=3",
-    tags: [
-      {
-        title: "Single Page Application",
-        link: "",
-        icon: "",
-      },
-      {
-        title: "",
-        link: "https://wojciechxfalkowski.github.io/Travel-website",
-        icon: "",
-      },
-    ],
-  },
-  {
-    title: "Travel Website",
-    image: "https://picsum.photos/640/640?random=3",
-    tags: [
-      {
-        title: "Single Page Application",
-        link: "",
-        icon: "",
-      },
-      {
-        title: "",
-        link: "https://wojciechxfalkowski.github.io/Travel-website",
-        icon: "",
-      },
-    ],
-  },
-  {
-    title: "Travel Website",
-    image: "https://picsum.photos/640/640?random=3",
-    tags: [
-      {
-        title: "Single Page Application",
-        link: "",
-        icon: "",
-      },
-      {
-        title: "",
-        link: "https://wojciechxfalkowski.github.io/Travel-website",
-        icon: "",
-      },
-    ],
-  },
-]);
+const { messages, locale } = useI18n();
+
+const portfolios = computed<PortfolioProject[]>(
+  () =>
+    ((
+      messages.value[locale.value] as {
+        portfolios: {
+          projects: PortfolioProject[];
+        };
+      }
+    )?.portfolios.projects as PortfolioProject[]) || []
+);
 
 const carouselBreakpoints = {
   0: {
