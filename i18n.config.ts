@@ -27,28 +27,96 @@ export default defineI18nConfig(() => ({
                     },
                 }
             },
-            contact: {
-                title: 'Contact',
-                subtitle: "Let's talk about growing your business",
-
+            "contactForm": {
+                "title": "Contact",
+                "subtitle": "Text me",
+                "name": "Name",
+                "email": "Email",
+                "message": "Message",
+                "button": "Send Message"
             },
+            "contactInfo": [
+                {
+                    "type": "Address",
+                    "value": "Warsaw, Poland",
+                    "icon": "icon_pin.svg"
+                },
+                {
+                    "type": "Phone",
+                    "value": "(+48) 698-444-030",
+                    "icon": "icon_phone.svg"
+                },
+                {
+                    "type": "E-Mail",
+                    "value": "wojtekfalkowski@gmail.com",
+                    "icon": "icon_mail.svg"
+                }
+            ],
             form: {
-                name: 'Name',
-                email: 'Email',
-                message: 'Message',
-                send: 'Send',
                 fieldIsRequired: 'Field is required',
             },
             navigationLinks: {
                 services: 'Services',
                 portfolios: 'Portfolios',
                 experience: 'Experience',
-                skills: 'Skills'
+                testimonials: 'Referencje',
+                skills: 'Skills',
+                contact: 'Contact',
             },
             projects: {
                 title: 'My portfolio',
                 subtitle: 'Recent projects'
             },
+            testimonials: [
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
+                    message:
+                        "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
+                    name: "Javlon Khalimjanov",
+                    role: "Front-end Developer",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
+                    message:
+                        "I'm glad I decided to work with you. The project was delivered on time with all the requirements.",
+                    name: "Michał Krawczycki",
+                    role: "Founder & Real estate agent - WellRent",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
+                    message:
+                        "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
+                    name: "Xavier Zielinski",
+                    role: "Founder & CEO - CityEcoView",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
+                    message:
+                        "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
+                    name: "Javlon Khalimjanov",
+                    role: "Front-end Developer",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
+                    message:
+                        "I'm glad I decided to work with you. The project was delivered on time with all the requirements.",
+                    name: "Michał Krawczycki",
+                    role: "Founder & Real estate agent - WellRent",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
+                    message:
+                        "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
+                    name: "Xavier Zielinski",
+                    role: "Founder & CEO - CityEcoView",
+                },
+            ],
             work: [
                 {
                     id: 1,
@@ -183,27 +251,96 @@ export default defineI18nConfig(() => ({
                     },
                 }
             },
-            contact: {
-                title: 'Kontakt',
-                subtitle: 'Porozmawiajmy o rozwoju Twojego biznesu',
+            "contactForm": {
+                "title": "Kontakt",
+                "subtitle": "Napisz do mnie",
+                "name": "Imię",
+                "email": "Email",
+                "message": "Wiadomość",
+                "button": "Wyślij wiadomość"
             },
+            "contactInfo": [
+                {
+                    "type": "Adres",
+                    "value": "Warszawa, Polska",
+                    "icon": "icon_pin.svg"
+                },
+                {
+                    "type": "Telefon",
+                    "value": "(+48) 698-444-030",
+                    "icon": "icon_phone.svg"
+                },
+                {
+                    "type": "E-Mail",
+                    "value": "wojtekfalkowski@gmail.com",
+                    "icon": "icon_mail.svg"
+                }
+            ],
             form: {
-                name: 'Imię',
-                email: 'Email',
-                message: 'Wiadomość',
-                send: 'Wyślij',
                 fieldIsRequired: 'Pole jest wymagane',
             },
             navigationLinks: {
                 services: 'Usługi',
                 portfolios: 'Portfolio',
                 experience: 'Doświadczenie',
-                skills: 'Umiejętności'
+                testimonials: 'Referencje',
+                skills: 'Umiejętności',
+                contact: 'Kontakt',
             },
             projects: {
                 title: 'Moje portfolio',
                 subtitle: 'Ostatnie projeky'
             },
+            testimonials: [
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
+                    message:
+                        "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
+                    name: "Javlon Khalimjanov",
+                    role: "Programista Front-end",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
+                    message:
+                        "Cieszę się, że zdecydowałem się na współpracę z Tobą. Projekt został dostarczony na czas, zgodnie ze wszystkimi wymaganiami.",
+                    name: "Michał Krawczycki",
+                    role: "Założyciel i agent nieruchomości - WellRent",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
+                    message:
+                        "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
+                    name: "Xavier Zielinski",
+                    role: "Założyciel i CEO - CityEcoView",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/D4D03AQGxycTdmxs6TA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732022992308?e=1741219200&v=beta&t=kruf-71ySNOcOJ6wR-jWQWr08UnUdHG9cT6bXDZH7oI", // Link do zdjęcia
+                    message:
+                        "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
+                    name: "Javlon Khalimjanov",
+                    role: "Programista Front-end",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/D5603AQGjUK41NW3nnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701690824735?e=1741219200&v=beta&t=sDqUhtdpgRMRVoOw-UZ_rn8wuoAmjSBUO4Qr7zwStN8",
+                    message:
+                        "Cieszę się, że zdecydowałem się na współpracę z Tobą. Projekt został dostarczony na czas, zgodnie ze wszystkimi wymaganiami.",
+                    name: "Michał Krawczycki",
+                    role: "Założyciel i agent nieruchomości - WellRent",
+                },
+                {
+                    avatar:
+                        "https://media.licdn.com/dms/image/v2/C5603AQEpNOUHIn0MAg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1616015148417?e=1741219200&v=beta&t=cclfzVh0d1YyP16TWfGdONdiPWfT3GqBkbWUl3F5QHU",
+                    message:
+                        "Byliśmy bardzo zadowoleni, gdy dowiedzieliśmy się, jak rozwiązałeś problemy i wyzwania związane z interfejsem użytkownika naszej strony internetowej.",
+                    name: "Xavier Zielinski",
+                    role: "Założyciel i CEO - CityEcoView",
+                },
+            ],
             work: [
                 {
                     id: 1,
