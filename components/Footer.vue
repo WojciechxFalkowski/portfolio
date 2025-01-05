@@ -27,7 +27,7 @@
           {{ $t("common.allRightsReserve") }}
         </p>
 
-        <router-link :to="{ path: '/' }" class="hover:text-[#2DD4BF] underline">
+        <router-link :to="{ path: '/privacy-policy' }" class="hover:text-[#2DD4BF] underline">
           {{ $t("common.privacyPolicy") }}
         </router-link>
       </section>
