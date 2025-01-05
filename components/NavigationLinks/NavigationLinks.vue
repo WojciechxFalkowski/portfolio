@@ -22,7 +22,7 @@ import { useI18n } from "vue-i18n";
 import { useRouter } from "vue-router";
 import { navigationLinks } from "./config";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const router = useRouter();
 
 const navigation = inject<Ref<any[]>>("navigation", ref(navigationLinks));
@@ -36,6 +36,10 @@ const sectionRatios = ref<Record<string, number>>({});
 let observer: IntersectionObserver;
 
 onMounted(() => {
+  initializeObserver();
+});
+
+const initializeObserver = () => {
   // Inicjujemy IntersectionObserver z wieloma thresholdami,
   // żeby uzyskać lepszą dokładność intersectionRatio
   observer = new IntersectionObserver(
@@ -77,5 +81,16 @@ onMounted(() => {
       observer.observe(el);
     }
   });
+};
+
+onUnmounted(() => {
+  if (observer) observer.disconnect();
+});
+
+watch(locale, () => {
+  if (observer) observer.disconnect();
+  setTimeout(() => {
+    initializeObserver();
+  }, 100);
 });
 </script>

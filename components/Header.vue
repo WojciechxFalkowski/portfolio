@@ -27,16 +27,6 @@ const imageUrl = "/profile.jpg";
 
       <div class="flex">
         <Social />
-        <!-- <a href="https://github.com/WojciechxFalkowski" target="_blank"
-          ><IconGithub class="w-5 h-5" />
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/wojciech-falkowski"
-          target="_blank"
-        >
-          <IconLinkedin class="w-5 h-5" />
-        </a> -->
       </div>
     </div>
 

@@ -54,7 +54,7 @@ const skills = ref<Skill[]>([
 </script>
 
 <template>
-  <section id="skills" class="py-12 lg:py-24">
+  <section id="skills" class="py-8 lg:py-32">
     <TitleWithSubtitle
       :title="$t('educationSection.title')"
       :subtitle="$t('educationSection.subtitle')"

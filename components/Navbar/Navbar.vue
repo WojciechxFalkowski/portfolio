@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { navigationLinks } from "../NavigationLinks/config";
+
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
 
@@ -28,6 +30,18 @@ onUnmounted(() => {
 watch(width, () => {
   handleScrollPosition();
 });
+
+const route = useRoute();
+
+const activeItem = computed(() => {
+  return route.path;
+});
+
+function closeMobileMenu() {
+  isMenuOpen.value = false;
+}
+
+const menuItems = inject<Ref<any[]>>("navigation", ref(navigationLinks));
 </script>
 
 <template>
@@ -54,11 +68,18 @@ watch(width, () => {
         <!-- <ColorModeButton></ColorModeButton> -->
         <LanguageSwitcher class="hidden lg:block" />
 
-        <button class="lg:hidden" @click="toggleHamburgerMenu">
+        <button class="lg:hidden z-[60]" @click="toggleHamburgerMenu">
           <IconHamburgerMenu :isOpen="isMenuOpen" />
         </button>
       </div>
     </ContainerWrapper>
+
+    <MobileMenuItems
+      :menuItems="menuItems"
+      :activeItem="activeItem"
+      :isMenuOpen="isMenuOpen"
+      @closeMenu="closeMobileMenu"
+    />
   </header>
 </template>
 

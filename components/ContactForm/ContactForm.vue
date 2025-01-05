@@ -53,7 +53,7 @@ const contactFormLabels = computed(() => {
 </script>
 
 <template>
-  <section id="contact" class="py-12 lg:py-24 bg-[#FBFBFB]">
+  <section id="contact" class="py-8 lg:py-32 bg-[#FBFBFB]">
     <ContainerWrapper>
       <TitleWithSubtitle
         :title="contactFormLabels.title"
