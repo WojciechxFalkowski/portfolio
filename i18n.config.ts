@@ -33,7 +33,7 @@ export default defineI18nConfig(() => ({
                 projects: [
                     {
                         title: "Travel",
-                        image: "portfolio_1.jpg",
+                        image: "portfolio_1.webp",
                         tags: [
                             {
                                 title: "Single Page Application",
@@ -51,7 +51,7 @@ export default defineI18nConfig(() => ({
                     },
                     {
                         title: "Trip Guide",
-                        image: "portfolio_2.jpg",
+                        image: "portfolio_2.webp",
                         tags: [
                             { title: "Vue", link: "", icon: "" },
                             { title: "Bootstrap", link: "", icon: "" },
@@ -63,7 +63,7 @@ export default defineI18nConfig(() => ({
                     },
                     {
                         title: "Well Rent",
-                        image: "portfolio_3.jpg",
+                        image: "portfolio_3.webp",
                         tags: [
                             { title: "Vue", link: "", icon: "" },
                             { title: "Custom CMS", link: "", icon: "" },
@@ -154,7 +154,7 @@ export default defineI18nConfig(() => ({
                         title: "Software Engineer Samsung",
                         location: "Warsaw · hybrid work, Poland",
                         date: "06.2024 - Present · Full-time",
-                        logo: "logo_samsung.jpg",
+                        logo: "logo_samsung.webp",
                         technologies: [
                             "HTML",
                             "CSS",
@@ -178,7 +178,7 @@ export default defineI18nConfig(() => ({
                         title: "Software Developer at Ready4S",
                         location: "Remote work, Poland",
                         date: "06.2023 - 06.2024 · Full-time",
-                        logo: "logo_ready4s.jpg",
+                        logo: "logo_ready4s.webp",
                         technologies: ["HTML", "CSS", "Tailwind", "JavaScript", "TypeScript", "Vue", "SOLID", "REST API", "Git", "Cypress", "Vitest", "GraphQL", "Jenkins", "SonarQube"],
                         tasks: [
                             "Build an e-commerce store for the USA market.",
@@ -196,7 +196,7 @@ export default defineI18nConfig(() => ({
                         title: "Frontend Developer at E Net Production",
                         location: "Remote work, Poland",
                         date: "02.2023 - 06.2023 · Full-time",
-                        logo: "logo_enetproduction.jpg",
+                        logo: "logo_enetproduction.webp",
 
                         technologies: ["HTML", "CSS", "SCSS", "JavaScript", "TypeScript", "Vue", "Vuex", "REST API", "SOLID", "IoC", "Git", "Scrum", "Linux"],
                         tasks: [
@@ -213,7 +213,7 @@ export default defineI18nConfig(() => ({
                         title: "Frontend Developer at CityEcoView",
                         location: "Remote work, Poland",
                         date: "09.2021 - 09.2022 · Contract",
-                        logo: "icon_cityecoview.png",
+                        logo: "icon_cityecoview.webp",
                         technologies: ["HTML", "CSS", "SCSS", "BEM", "Bootstrap", "JavaScript", "TypeScript", "React", "Vue", "Nuxt", "SEO", "SSR", "Git"],
                         tasks: [
                             "Develop ecology-focused projects.",
@@ -228,7 +228,7 @@ export default defineI18nConfig(() => ({
                         title: "Frontend Developer at Move Closer",
                         location: "Remote work, Poland",
                         date: "02.2021 - 02.2023 · Full-time",
-                        logo: "logo_move_close.jpg",
+                        logo: "logo_move_close.webp",
                         technologies: ["HTML", "CSS", "SCSS", "BEM", "Bootstrap 5", "JavaScript", "TypeScript", "Vue", "Vuex", "Pinia", "React", "SSR", "GraphQL", "REST API", "SOLID", "IoC", "Git", "Magento 2", "Wordpress"],
                         tasks: [
                             "Design, implement, and develop several e-commerce projects from scratch, including a custom advanced CMS for well-known Polish brands.",
@@ -255,7 +255,7 @@ export default defineI18nConfig(() => ({
                         "field": "Software Engineering",
                         "date": "2022 - 2024",
                         "grade": "5",
-                        "logo": "akademia_wit_logo.jpg"
+                        "logo": "akademia_wit_logo.webp"
                     },
                     {
                         "id": 2,
@@ -264,7 +264,7 @@ export default defineI18nConfig(() => ({
                         "field": "Computer Engineering",
                         "date": "2018 - 2022",
                         "grade": "5",
-                        "logo": "akademia_wit_logo.jpg"
+                        "logo": "akademia_wit_logo.webp"
                     }
                 ],
             },
@@ -743,7 +743,7 @@ export default defineI18nConfig(() => ({
                 projects: [
                     {
                         title: "Strona internetowa podróży",
-                        image: "portfolio_1.jpg",
+                        image: "portfolio_1.webp",
                         tags: [
                             {
                                 title: "Statyczna strona",
@@ -761,7 +761,7 @@ export default defineI18nConfig(() => ({
                     },
                     {
                         title: "Trip Guide",
-                        image: "portfolio_2.jpg",
+                        image: "portfolio_2.webp",
                         tags: [
                             { title: "Vue", link: "", icon: "" },
                             { title: "Bootstrap", link: "", icon: "" },
@@ -772,7 +772,7 @@ export default defineI18nConfig(() => ({
                     },
                     {
                         title: "Well Rent",
-                        image: "portfolio_3.jpg",
+                        image: "portfolio_3.webp",
                         tags: [
                             { title: "Vue", link: "", icon: "" },
                             { title: "Autorski CMS", link: "", icon: "" },
@@ -862,7 +862,7 @@ export default defineI18nConfig(() => ({
                         title: "Software Engineer Samsung",
                         location: "Warszawa · Praca hybrydowa, Polska",
                         date: "06.2024 - obecnie · Pełny etat",
-                        logo: "logo_samsung.jpg",
+                        logo: "logo_samsung.webp",
                         technologies: [
                             "HTML",
                             "CSS",
@@ -886,7 +886,7 @@ export default defineI18nConfig(() => ({
                         title: "Software Developer at Ready4S",
                         location: "Praca zdalna, Polska",
                         date: "06.2023 - 06.2024 · Pełny etat",
-                        logo: "logo_ready4s.jpg",
+                        logo: "logo_ready4s.webp",
                         technologies: ["HTML", "CSS", "Tailwind", "JavaScript", "TypeScript", "Vue", "SOLID", "REST API", "Git", "Cypress", "Vitest", "GraphQL", "Jenkins", "SonarQube"],
                         tasks: [
                             "Budowa sklepu e-commerce na rynek amerykański.",
@@ -904,7 +904,7 @@ export default defineI18nConfig(() => ({
                         title: "Frontend Developer at E Net Production",
                         location: "Praca zdalna, Polska",
                         date: "02.2023 - 06.2023 · Pełny etat",
-                        logo: "logo_enetproduction.jpg",
+                        logo: "logo_enetproduction.webp",
 
                         technologies: ["HTML", "CSS", "SCSS", "JavaScript", "TypeScript", "Vue", "Vuex", "REST API", "SOLID", "IoC", "Git", "Scrum", "Linux"],
                         tasks: [
@@ -921,7 +921,7 @@ export default defineI18nConfig(() => ({
                         title: "Frontend Developer at CityEcoView",
                         location: "Praca zdalna, Polska",
                         date: "09.2021 - 09.2022 · Kontrakt",
-                        logo: "icon_cityecoview.png",
+                        logo: "icon_cityecoview.webp",
                         technologies: ["HTML", "CSS", "SCSS", "BEM", "Bootstrap", "JavaScript", "TypeScript", "React", "Vue", "Nuxt", "SEO", "SSR", "Git"],
                         tasks: [
                             "Rozwój projektów z dziedziny ekologii.",
@@ -936,7 +936,7 @@ export default defineI18nConfig(() => ({
                         title: "Frontend Developer at Move Closer",
                         location: "Warszawa, Polska",
                         date: "02.2021 - 02.2023 · Pełny etat",
-                        logo: "logo_move_close.jpg",
+                        logo: "logo_move_close.webp",
                         technologies: ["HTML", "CSS", "SCSS", "BEM", "Bootstrap 5", "JavaScript", "TypeScript", "Class based Vue", "Vuex", "Pinia", "React", "SSR", "GraphQL", "REST API", "SOLID", "IoC", "Git", "Magento 2", "Wordpress"],
                         tasks: [
                             "Projektowanie, realizacja i rozwój kilku projektów e-commerce dla Polskich znanych marek od A do Z zawierających autorski zaawansowany CMS.",
@@ -963,7 +963,7 @@ export default defineI18nConfig(() => ({
                         "field": "Inżynieria oprogramowania",
                         "date": "2022 - 2024",
                         "grade": "5",
-                        "logo": "akademia_wit_logo.jpg"
+                        "logo": "akademia_wit_logo.webp"
                     },
                     {
                         "id": 2,
@@ -972,7 +972,7 @@ export default defineI18nConfig(() => ({
                         "field": "Inżynieria komputerowa",
                         "date": "2018 - 2022",
                         "grade": "5",
-                        "logo": "akademia_wit_logo.jpg"
+                        "logo": "akademia_wit_logo.webp"
                     }
                 ],
             },

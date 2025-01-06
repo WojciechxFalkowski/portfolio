@@ -1,7 +1,7 @@
 <template>
   <div>
     <ContainerWrapper>
-      <Header class="mt-8 lg:mt-0"/>
+      <Header class="mt-8 lg:mt-0" />
     </ContainerWrapper>
 
     <AnimateContainer>
