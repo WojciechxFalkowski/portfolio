@@ -1,24 +1,36 @@
 <template>
   <div>
     <ContainerWrapper>
-      <Header />
+      <Header class="mt-8 lg:mt-0"/>
     </ContainerWrapper>
 
-    <SectionServices />
+    <AnimateContainer>
+      <SectionServices />
+    </AnimateContainer>
 
-    <ContainerWrapper>
-      <FeaturedPortfolios />
-    </ContainerWrapper>
+    <AnimateContainer>
+      <ContainerWrapper>
+        <FeaturedPortfolios />
+      </ContainerWrapper>
+    </AnimateContainer>
 
-    <WorkExperience />
+    <AnimateContainer>
+      <WorkExperience />
+    </AnimateContainer>
 
-    <Testimonials />
+    <AnimateContainer>
+      <Testimonials />
+    </AnimateContainer>
 
-    <ContainerWrapper>
-      <EducationAndSkillsSection />
-    </ContainerWrapper>
+    <AnimateContainer>
+      <ContainerWrapper>
+        <EducationAndSkillsSection />
+      </ContainerWrapper>
+    </AnimateContainer>
 
-    <ContactForm />
+    <AnimateContainer>
+      <ContactForm />
+    </AnimateContainer>
   </div>
 </template>
 
