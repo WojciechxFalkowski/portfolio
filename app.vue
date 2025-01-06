@@ -3,29 +3,56 @@
 
 // const color = computed(() => colorMode.value === 'dark' ? '#111827' : 'white')
 
+const route = useRoute();
+
+const { locale } = useI18n();
+
+const currentLanguage = computed(() => locale.value);
+
 useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk
+      ? `${titleChunk} | Wojciech Falkowski | Front-end Developer`
+      : "Wojciech Falkowski | Front-end Developer";
+  },
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
-    { key: "theme-color", name: "theme-color" }, //content: color
+    { key: "theme-color", name: "theme-color" },
+    {
+      name: "google-site-verification",
+      content: "rxAipKTOgycQJYvnfco-6awgcxmHst7nnCPiqFqic70",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:site_name",
+      content: "https://wojciechfalkowski.pl",
+    },
+    {
+      name: "og:site_name",
+      content: "https://wojciechfalkowski.pl",
+    },
+    {
+      property: "lang",
+      content: currentLanguage.value,
+    },
+    {
+      name: "og:url",
+      content: route.fullPath,
+    },
+    {
+      property: "og:url",
+      content: route.fullPath,
+    },
   ],
   link: [{ rel: "icon", href: "/favicon.ico" }],
   htmlAttrs: {
-    lang: "en",
+    lang: currentLanguage.value,
   },
 });
-
-useSeoMeta({
-  titleTemplate: "%s - Wojciech Falkowski portfolio",
-  ogImage: "https://saas-template.nuxt.dev/social-card.png",
-  twitterImage: "https://saas-template.nuxt.dev/social-card.png",
-  twitterCard: "summary_large_image",
-});
-
-// const { trackVisibility } = useAnalytics();
-// const sendIsVisibleFooter = async () => {
-//   await trackVisibility("Footer");
-// };
 </script>
 
 <template>
