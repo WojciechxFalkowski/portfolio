@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const imageUrl = "/profile1.webp";
+const imageUrl = "/profile.webp";
 </script>
 
 <template>
