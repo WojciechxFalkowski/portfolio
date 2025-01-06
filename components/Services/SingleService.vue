@@ -5,7 +5,7 @@
     <div
       class="mx-auto flex h-12 w-12 items-center justify-center rounded-md bg-teal-100"
     >
-      <img :src="icon" alt="Icon" class="w-6 h-6" />
+      <img :src="icon" alt="Icon" loading="lazy" class="w-6 h-6" />
     </div>
 
     <h3 class="text-gray-800 font-semibold">

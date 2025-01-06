@@ -57,6 +57,7 @@
           <img
             :src="item.image"
             :alt="item.title"
+            loading="lazy"
             class="w-full h-full object-cover"
           />
         </div>

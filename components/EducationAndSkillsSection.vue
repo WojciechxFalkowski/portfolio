@@ -73,6 +73,7 @@ const skills = ref<Skill[]>([
               :src="educationStage.logo"
               :alt="educationStage.institution"
               class="w-12 h-12"
+              loading="lazy"
             />
             <div>
               <h3 class="text-lg font-bold text-[#0F172A] text-[16px]">
@@ -106,7 +107,12 @@ const skills = ref<Skill[]>([
             :key="skill.name"
             class="flex flex-col items-center"
           >
-            <img :src="skill.icon" :alt="skill.name" class="w-8 h-8" />
+            <img
+              :src="skill.icon"
+              loading="lazy"
+              :alt="skill.name"
+              class="w-8 h-8"
+            />
             <p class="mt-1 md:mt-2 text-xs lg:text-sm text-[#0F172A]">
               {{ skill.name }}
             </p>

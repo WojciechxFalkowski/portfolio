@@ -19,7 +19,12 @@
         >
           <button class="company-header" @click="toggleAccordion(index)">
             <div class="flex gap-4 items-center">
-              <img class="company-logo" :src="job.logo" :alt="job.name" />
+              <img
+                class="company-logo"
+                :src="job.logo"
+                loading="lazy"
+                :alt="job.name"
+              />
 
               <span class="company-title">{{ job.name }}</span>
             </div>

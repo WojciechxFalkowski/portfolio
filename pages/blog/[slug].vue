@@ -38,6 +38,7 @@
                     class="rounded-full h-5 w-5 text-[10px]"
                     alt="Emily pasek"
                     src="https://i.pravatar.cc/128?u=5"
+                    loading="lazy"
                 /></span>
                 Emily pasek</a
               >

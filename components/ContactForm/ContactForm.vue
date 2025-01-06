@@ -87,7 +87,12 @@ const contactFormLabels = computed(() => {
             <div
               class="w-12 h-12 flex items-center justify-center bg-[#2DD4BF] bg-opacity-25 rounded-lg"
             >
-              <img :src="info.icon" :alt="info.type" class="w-6 h-6" />
+              <img
+                :src="info.icon"
+                loading="lazy"
+                :alt="info.type"
+                class="w-6 h-6"
+              />
             </div>
             <div>
               <p class="text-[#0F172A] font-medium">{{ info.type }}</p>

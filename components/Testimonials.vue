@@ -30,6 +30,7 @@
               <img
                 :src="testimonial.avatar"
                 :alt="testimonial.name"
+                loading="lazy"
                 class="w-24 h-24 rounded-full object-cover shadow-sm"
               />
             </div>
