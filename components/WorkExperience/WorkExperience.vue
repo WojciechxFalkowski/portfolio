@@ -1,7 +1,7 @@
 <template>
   <section
     id="experience"
-    class="work-experiences-container bg-[#FBFBFB] py-8 lg:py-32"
+    class="work-experiences-container bg-[#FBFBFB] py-8 lg:py-48"
   >
     <ContainerWrapper>
       <TitleWithSubtitle
@@ -169,11 +169,11 @@ function toggleAccordion(index: number) {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 2px;
   padding: 0;
 
   @media (min-width: 1024px) {
-    gap: 16px;
+    gap: 4px;
   }
 }
 .tag {
