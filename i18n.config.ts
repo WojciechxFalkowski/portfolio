@@ -33,7 +33,7 @@ export default defineI18nConfig(() => ({
                 projects: [
                     {
                         title: "Travel",
-                        image: "portfolio_1.webp",
+                        image: "pportfolio_1.webp",
                         tags: [
                             {
                                 title: "Single Page Application",
@@ -51,7 +51,7 @@ export default defineI18nConfig(() => ({
                     },
                     {
                         title: "Trip Guide",
-                        image: "portfolio_2.webp",
+                        image: "pportfolio_2.webp",
                         tags: [
                             { title: "Vue", link: "", icon: "" },
                             { title: "Bootstrap", link: "", icon: "" },
@@ -63,7 +63,7 @@ export default defineI18nConfig(() => ({
                     },
                     {
                         title: "Well Rent",
-                        image: "portfolio_3.webp",
+                        image: "pportfolio_3.webp",
                         tags: [
                             { title: "Vue", link: "", icon: "" },
                             { title: "Custom CMS", link: "", icon: "" },
@@ -743,7 +743,7 @@ export default defineI18nConfig(() => ({
                 projects: [
                     {
                         title: "Strona internetowa podróży",
-                        image: "portfolio_1.webp",
+                        image: "pportfolio_1.webp",
                         tags: [
                             {
                                 title: "Statyczna strona",
@@ -761,7 +761,7 @@ export default defineI18nConfig(() => ({
                     },
                     {
                         title: "Trip Guide",
-                        image: "portfolio_2.webp",
+                        image: "pportfolio_2.webp",
                         tags: [
                             { title: "Vue", link: "", icon: "" },
                             { title: "Bootstrap", link: "", icon: "" },
@@ -772,7 +772,7 @@ export default defineI18nConfig(() => ({
                     },
                     {
                         title: "Well Rent",
-                        image: "portfolio_3.webp",
+                        image: "pportfolio_3.webp",
                         tags: [
                             { title: "Vue", link: "", icon: "" },
                             { title: "Autorski CMS", link: "", icon: "" },
