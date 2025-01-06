@@ -25,12 +25,17 @@ interface Messages {
 
 const { messages, locale } = useI18n();
 
-const isUpdatingPageConfiguration = ref(false);
+const isSendingEmailMessage = ref(false);
+const { sendEmail } = useEmailConfiguration();
 
-const onSubmit = async (formData: any) => {
+const onSubmit = async (formData: EmailFields) => {
   try {
+    isSendingEmailMessage.value = true;
+    await sendEmail(formData);
   } catch (error) {
+    console.log(error);
   } finally {
+    isSendingEmailMessage.value = false;
   }
 };
 
@@ -67,7 +72,7 @@ const contactFormLabels = computed(() => {
           :initialValues="[]"
           :submitButton="{
             ...formConfiguration.submitButton,
-            isLoading: isUpdatingPageConfiguration,
+            isLoading: isSendingEmailMessage,
           }"
           :onSubmit="onSubmit"
           :formClass="formConfiguration.formClass"

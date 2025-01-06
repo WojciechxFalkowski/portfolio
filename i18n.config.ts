@@ -219,7 +219,7 @@ export default defineI18nConfig(() => ({
                             "Develop ecology-focused projects.",
                             "Build a company showcase website.",
                             "Design, implement, and develop core functionalities.",
-                            "Refactor code to meet modern standards."
+                            "Proficient in estimating time requirements for specific features and implementing them efficiently",
                         ],
                     },
                     {
@@ -927,7 +927,7 @@ export default defineI18nConfig(() => ({
                             "Rozwój projektów z dziedziny ekologii.",
                             "Budowa strony wizytówki firmy.",
                             "Projektowanie, implementacja i rozwój głównych funkcjonalności.",
-                            "Refaktoryzacja kodu do nowszych standardów.",
+                            "Biegłe szacowanie wymagań czasowych dla określonych funkcji i skutecznym ich wdrażaniu.",
                         ],
                     },
                     {
