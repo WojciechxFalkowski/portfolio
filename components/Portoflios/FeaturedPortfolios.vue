@@ -121,7 +121,7 @@ const carouselBreakpoints = {
   0: {
     itemsToShow: 1,
   },
-  768: {
+  550: {
     itemsToShow: 2,
   },
   1024: {
