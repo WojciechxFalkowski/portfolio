@@ -716,7 +716,7 @@ export default defineI18nConfig(() => ({
             header: {
                 greeting: "Cześć, nazywam się",
                 title: "Wojciech Falkowski",
-                description: "Jestem programistą z ponad 4-letnim doświadczeniem, specjalizujący się w budowaniu nowoczesnych, responsywnych i przyjaznych dla użytkownika stron internetowych.",
+                description: "Jestem programistą z ponad 4-letnim doświadczeniem, specjalizującym się w budowaniu nowoczesnych, responsywnych i przyjaznych dla użytkownika stron internetowych.",
                 contact: "Skontaktuj się"
             },
             services: {
