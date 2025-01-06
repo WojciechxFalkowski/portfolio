@@ -11,10 +11,10 @@ export const navigationLinks = [
     label: "navigationLinks.experience",
     to: "#experience"
   },
-  {
-    label: "navigationLinks.testimonials",
-    to: "#testimonials"
-  },
+  // {
+  //   label: "navigationLinks.testimonials",
+  //   to: "#testimonials"
+  // },
   {
     label: "navigationLinks.skills",
     to: "#skills"

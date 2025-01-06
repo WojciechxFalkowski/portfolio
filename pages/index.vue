@@ -18,9 +18,9 @@
       <WorkExperience />
     </AnimateContainer>
 
-    <AnimateContainer>
+    <!-- <AnimateContainer>
       <Testimonials />
-    </AnimateContainer>
+    </AnimateContainer> -->
 
     <AnimateContainer>
       <ContainerWrapper>
