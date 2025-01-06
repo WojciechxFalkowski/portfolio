@@ -65,6 +65,7 @@ useHead({
 @font-face {
   font-family: Inter;
   src: url(~/public/InterFont.ttf);
+  font-display: swap;
 }
 
 html {
