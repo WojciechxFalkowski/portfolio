@@ -1,14 +1,12 @@
 export interface EmailFields {
     email: string;
-    phone: string;
+    name: string;
     message: string
 }
 export const useEmailConfiguration = () => {
     const runtimeConfig = useRuntimeConfig()
 
-    const sendEmail = async ({ email, phone, message }: EmailFields) => {
-console.log('runtimeConfig.public.BACKEND_BASE_URL');
-console.log(runtimeConfig.public.BACKEND_BASE_URL);
+    const sendEmail = async ({ email, name, message }: EmailFields) => {
 
         try {
             const response = await $fetch<void>(`${runtimeConfig.public.BACKEND_BASE_URL}/email`, {
@@ -17,7 +15,7 @@ console.log(runtimeConfig.public.BACKEND_BASE_URL);
                 body: JSON.stringify(
                     {
                         email,
-                        phone,
+                        name,
                         message
                     })
             })
