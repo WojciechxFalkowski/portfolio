@@ -7,7 +7,7 @@ const imageUrl = "/profile1.webp";
     class="h-[calc(100vh-85px)] flex flex-col md:flex-row items-center justify-center md:justify-between lg:py-8 relative md:gap-4"
   >
     <div
-      class="space-y-4 lg:space-y-8 order-1 md:-order-none mt-4 lg:mt-0 md:text-left lg:max-w-[50%] my-8 lg:my-0"
+      class="space-y-4 lg:space-y-8 order-1 md:-order-none mt-4 lg:mt-0 md:text-left md:max-w-[50%] my-8 lg:my-0"
     >
       <Subtitle :subtitle="$t('header.greeting')" />
 
@@ -32,20 +32,26 @@ const imageUrl = "/profile1.webp";
 
     <picture>
       <source
+        srcset="/profile_200x200.webp"
+        media="(max-width: 639px)"
+        type="image/webp"
+      />
+      <source
         srcset="/profile_250x250.webp"
-        media="(max-width: 768px)"
+        media="(min-width: 640px) and (max-width: 1023px)"
         type="image/webp"
       />
       <source
         srcset="/profile1.webp"
-        media="(min-width: 769px)"
+        media="(min-width: 1024px)"
         type="image/webp"
       />
 
       <img
         src="/profile1.webp"
         :alt="$t('common.headerPicture')"
-        class="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px] object-cover lg:mt-0 rounded-full border-[#23A5A4] border"
+        fetchpriority="high"
+        class="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[400px] lg:h-[400px] object-cover lg:mt-0 rounded-full border-[#23A5A4] border"
       />
     </picture>
 
@@ -62,11 +68,11 @@ const imageUrl = "/profile1.webp";
     />
 
     <IconSquare
-      class="absolute bottom-[45%] sm:bottom-[20%] right-0 lg:top-5 lg:right-[-20px] text-[#23A5A4]"
+      class="absolute bottom-[10%] sm:bottom-[20%] right-0 lg:top-5 lg:right-[-20px] text-[#23A5A4]"
     />
 
     <IconSquare
-      class="absolute top-40 left-[0] md:top-[35%] md:left-[40%] rotate-45 text-[#0047FF]"
+      class="absolute top-40 left-[0] md:top-[25%] md:left-[40%] rotate-45 text-[#0047FF]"
     />
 
     <IconTriangle

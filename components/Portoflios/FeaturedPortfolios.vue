@@ -58,6 +58,7 @@
             :src="item.image"
             :alt="item.title"
             loading="lazy"
+            fetchpriority="low"
             class="w-full h-full object-cover"
           />
         </div>
