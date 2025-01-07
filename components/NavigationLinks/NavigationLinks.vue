@@ -6,8 +6,8 @@
         :class="[
           'text-sm/6 flex items-center gap-1 transition-colors',
           activeSection === link.to.replace('#', '')
-            ? 'text-[#2DD4BF]'
-            : 'text-[#0F172A] hover:text-[#2DD4BF]',
+            ? 'text-[#23A5A4]'
+            : 'text-[#0F172A] hover:text-[#23A5A4]',
         ]"
       >
         {{ t(link.label) }}

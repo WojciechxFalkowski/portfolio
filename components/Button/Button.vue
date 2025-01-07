@@ -2,7 +2,7 @@
   <component
     :is="componentIs"
     v-bind="linkProperties"
-    class="relative mt-4 px-6 py-3 bg-[#2DD4BF] text-white rounded-lg hover:bg-teal-500 transition-all"
+    class="relative mt-4 px-6 py-3 bg-[#23A5A4] text-white rounded-lg hover:bg-teal-500 transition-all"
     :class="[theme, { 'w-100': isFluid }]"
     :disabled="isDisabled || isLoading"
   >

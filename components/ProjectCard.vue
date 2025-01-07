@@ -4,7 +4,7 @@
   >
     <div
       v-if="badge"
-      class="absolute top-3 left-3 bg-[#2DD4BF] text-white rounded-full px-3 py-1 text-sm font-semibold"
+      class="absolute top-3 left-3 bg-[#23A5A4] text-white rounded-full px-3 py-1 text-sm font-semibold"
     >
       {{ badge }}
     </div>
@@ -20,7 +20,7 @@
       <a
         :href="`https://${link}`"
         target="_blank"
-        class="hover:text-[#2DD4BF] transition-all font-medium break-all flex items-center"
+        class="hover:text-[#23A5A4] transition-all font-medium break-all flex items-center"
       >
         <IconLink class="w-5 h-5 mr-2" />
 

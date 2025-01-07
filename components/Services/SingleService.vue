@@ -9,11 +9,11 @@
     </div>
 
     <h3 class="text-gray-800 font-semibold">
-      {{ $t(title) }}
+      {{ title }}
     </h3>
 
     <p class="text-sm text-gray-600 leading-relaxed">
-      {{ $t(description) }}
+      {{ description }}
     </p>
   </div>
 </template>
@@ -38,7 +38,7 @@ const props = defineProps({
   titleClass: {
     type: String as PropType<string>,
     required: false,
-    default: () => "text-[#2DD4BF] text-lg",
+    default: () => "text-[#23A5A4] text-lg",
   },
   descriptionClass: {
     type: String as PropType<string>,

@@ -44,7 +44,7 @@
           :id="field.id"
           :type="field.type"
           v-slot="{ field: slotField, errors }"
-          class="block px-2.5 pb-2.5 pt-5 w-full text-sm border border-[#2DD4BF] rounded text-[#0F172A] appearance-none dark:text-white focus:outline-none focus:ring-0 peer"
+          class="block px-2.5 pb-2.5 pt-5 w-full text-sm border border-[#23A5A4] rounded text-[#0F172A] appearance-none dark:text-white focus:outline-none focus:ring-0 peer"
           v-model="formData[field.id]"
           :placeholder="''"
           :class="field.inputClass"

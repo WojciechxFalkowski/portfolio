@@ -20,14 +20,17 @@ export default defineI18nConfig(() => ({
                 description: 'Services',
                 offerings: {
                     websites: {
+                        icon: "/crown.svg",
                         title: 'UI/UX Design',
                         description: 'Turn what you have in mind of a digital product into reality. For any platform you consider.'
                     },
                     onlineStores: {
+                        icon: "/layers.svg",
                         title: 'Application Development',
                         description: 'Standard designing, building, and implementing your applications with documentation.'
                     },
                     customApplications: {
+                        icon: "/web.svg",
                         title: 'Web Development',
                         description: 'Create and maintain your websites and also take care of its performance and traffic capacity.'
                     },
@@ -716,6 +719,8 @@ export default defineI18nConfig(() => ({
                 privacyPolicy: 'Privacy policy',
                 cookiesSettings: 'Cookies settings',
                 allRightsReserve: 'All rights reserved.',
+                hamburgerMenu: 'Hamburger button menu',
+                headerPicture: 'Image of Wojciech Falkowski'
                 // madeWithLove: 'Made with 💖 by Wojciech Falkowski'
             },
         },
@@ -737,14 +742,17 @@ export default defineI18nConfig(() => ({
                 description: 'Usługi',
                 offerings: {
                     websites: {
+                        icon: "/crown.svg",
                         title: 'UI/UX Design',
                         description: 'Przekształcam Twój pomysł cyfrowego produktu w realną wartość dopasowaną do różnych platform.'
                     },
                     onlineStores: {
+                        icon: "/layers.svg",
                         title: 'Tworzenie aplikacji',
                         description: 'Projektowanie, budowa i wdrażanie aplikacji wraz z pełną dokumentacją.'
                     },
                     customApplications: {
+                        icon: "/web.svg",
                         title: 'Dedykowane aplikacje',
                         description: 'Tworzę i utrzymuję strony internetowe, dbając jednocześnie o ich wydajność i monitorując ruch na stronie.'
                     },
@@ -1426,6 +1434,8 @@ export default defineI18nConfig(() => ({
                 privacyPolicy: 'Polityka prywatności',
                 cookiesSettings: 'Ustawienia cookies',
                 allRightsReserve: 'Wszystkie prawa zastrzeżone.',
+                hamburgerMenu: 'Przycisk menu hamburgera',
+                headerPicture:'Zdjęcie przedstawiające Wojciecha Falkowskiego'
                 // madeWithLove: 'Made with 💖 by Wojciech Falkowski'
             },
         }

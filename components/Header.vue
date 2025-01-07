@@ -11,7 +11,7 @@ const imageUrl = "/profile1.webp";
     >
       <Subtitle :subtitle="$t('header.greeting')" />
 
-      <h1 class="text-3xl md:text-4xl lg:text-[40px] text-[#2DD4BF]">
+      <h1 class="text-3xl md:text-4xl lg:text-[40px] text-[#23A5A4]">
         {{ $t("header.title") }}
       </h1>
 
@@ -20,7 +20,7 @@ const imageUrl = "/profile1.webp";
       </h2>
 
       <button
-        class="mt-4 px-6 py-3 bg-[#2DD4BF] text-white rounded-lg hover:bg-teal-500 transition-all"
+        class="mt-4 px-6 py-3 border border-[#0F172A] transition-all text-[#0F172A] hover:bg-teal-500 hover:text-white hover:border-[#fff]"
       >
         {{ $t("header.contact") }}
       </button>
@@ -30,11 +30,24 @@ const imageUrl = "/profile1.webp";
       </div>
     </div>
 
-    <img
-      :src="imageUrl"
-      alt="Image of Wojciech Falkowski"
-      class="h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px] object-cover lg:mt-0 rounded-full border-[#2DD4BF] border"
-    />
+    <picture>
+      <source
+        srcset="/profile_250x250.webp"
+        media="(max-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="/profile1.webp"
+        media="(min-width: 769px)"
+        type="image/webp"
+      />
+
+      <img
+        src="/profile1.webp"
+        :alt="$t('common.headerPicture')"
+        class="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px] object-cover lg:mt-0 rounded-full border-[#23A5A4] border"
+      />
+    </picture>
 
     <IconCircle
       class="absolute top-10 left-10 lg:top-10 lg:left-10 text-[#FFB400]"
@@ -49,7 +62,7 @@ const imageUrl = "/profile1.webp";
     />
 
     <IconSquare
-      class="absolute bottom-[45%] sm:bottom-[20%] right-0 lg:top-5 lg:right-[-20px] text-[#2DD4BF]"
+      class="absolute bottom-[45%] sm:bottom-[20%] right-0 lg:top-5 lg:right-[-20px] text-[#23A5A4]"
     />
 
     <IconSquare

@@ -27,7 +27,7 @@
           {{ $t("common.allRightsReserve") }}
         </p>
 
-        <router-link :to="{ path: '/privacy-policy' }" class="hover:text-[#2DD4BF] underline">
+        <router-link :to="{ path: '/privacy-policy' }" class="hover:text-[#23A5A4] underline">
           {{ $t("common.privacyPolicy") }}
         </router-link>
       </section>
@@ -42,15 +42,15 @@
         <div
           class="flex justify-center lg:justify-normal gap-8 lg:gap-4 w-full lg:w-auto"
         > -->
-      <!-- <router-link :to="{ path: '/' }" class="hover:text-[#2DD4BF]">
+      <!-- <router-link :to="{ path: '/' }" class="hover:text-[#23A5A4]">
             {{ $t("common.privacyPolicy") }}
           </router-link> -->
 
-      <!-- <router-link :to="{ path: '/' }" class="hover:text-[#2DD4BF]"
+      <!-- <router-link :to="{ path: '/' }" class="hover:text-[#23A5A4]"
             >Terms of Service</router-link
           > -->
 
-      <!-- <router-link :to="{ path: '/' }" class="hover:text-[#2DD4BF]">
+      <!-- <router-link :to="{ path: '/' }" class="hover:text-[#23A5A4]">
             {{ $t("common.cookiesSettings") }}
           </router-link> -->
       <!-- </div> -->

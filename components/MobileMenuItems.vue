@@ -84,7 +84,7 @@ function isActive(hash: string) {
   transform-origin: center;
   width: 100%;
   height: 2px;
-  background-color: #2dd4bf; /* Tailwind's teal-400 */
+  background-color: #23A5A4; /* Tailwind's teal-400 */
   transition: transform 0.3s ease;
 }
 

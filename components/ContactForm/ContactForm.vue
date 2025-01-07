@@ -85,7 +85,7 @@ const contactFormLabels = computed(() => {
             class="flex items-center gap-4"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-[#2DD4BF] bg-opacity-25 rounded-lg"
+              class="w-12 h-12 flex items-center justify-center bg-[#23A5A4] bg-opacity-25 rounded-lg"
             >
               <img
                 :src="info.icon"

@@ -1,7 +1,22 @@
 <script setup lang="ts">
-import type { Service } from "~/types/service";
+interface Services {
+  icon: string;
+  title: string;
+  description: string;
+}
 
-const { data: services } = await useFetch<Service[]>("/api/services");
+const { messages, locale } = useI18n();
+
+const services = computed<Services[]>(
+  () =>
+    ((
+      messages.value[locale.value] as {
+        services: {
+          offerings: Services[];
+        };
+      }
+    )?.services.offerings as Services[]) || []
+);
 </script>
 
 <template>

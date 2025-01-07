@@ -68,7 +68,11 @@ const menuItems = inject<Ref<any[]>>("navigation", ref(navigationLinks));
         <!-- <ColorModeButton></ColorModeButton> -->
         <LanguageSwitcher class="hidden lg:block" />
 
-        <button class="lg:hidden z-[60]" @click="toggleHamburgerMenu">
+        <button
+          class="lg:hidden z-[60]"
+          @click="toggleHamburgerMenu"
+          :aria-label="$t('common.hamburgerMenu')"
+        >
           <IconHamburgerMenu :isOpen="isMenuOpen" />
         </button>
       </div>

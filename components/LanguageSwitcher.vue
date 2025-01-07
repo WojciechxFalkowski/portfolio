@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-8 h-8 overflow-hidden bg-[#2DD4BF] text-white">
+  <div class="relative w-8 h-8 overflow-hidden bg-[#23A5A4] text-white">
     <div
       class="transition-transform duration-300 ease-in-out mx-auto text-center"
       :class="currentLanguage === 'pl' ? '-translate-y-8' : 'translate-y-0'"
