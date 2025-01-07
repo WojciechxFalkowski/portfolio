@@ -297,6 +297,11 @@ export default defineI18nConfig(() => ({
                          target="_blank" class="text-blue-600 underline">Privacy Policy Generator</a>.
                     `,
                 },
+                interpretationAndDefinitions: {
+                    title: "Interpretation and Definitions",
+                    subtitle: "Interpretation",
+                    content: "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."
+                },
                 definitions: {
                     title: "Definitions",
                     introduction: "For the purposes of this Privacy Policy:",
@@ -1017,6 +1022,11 @@ export default defineI18nConfig(() => ({
                          target="_blank" class="text-blue-600 underline">Generatora Polityki Prywatności</a>.
                     `,
                 },
+                interpretationAndDefinitions: {
+                    title: "Interpretacja i definicje",
+                    subtitle: "Interpretacja",
+                    content: "Słowa, których pierwsza litera jest pisana wielką literą, mają znaczenie określone w poniższych warunkach. Poniższe definicje mają to samo znaczenie niezależnie od tego, czy występują w liczbie pojedynczej, czy mnogiej."
+                },
                 definitions: {
                     title: "Definicje",
                     introduction: "Na potrzeby niniejszej Polityki Prywatności:",
@@ -1435,7 +1445,7 @@ export default defineI18nConfig(() => ({
                 cookiesSettings: 'Ustawienia cookies',
                 allRightsReserve: 'Wszystkie prawa zastrzeżone.',
                 hamburgerMenu: 'Przycisk menu hamburgera',
-                headerPicture:'Zdjęcie przedstawiające Wojciecha Falkowskiego'
+                headerPicture: 'Zdjęcie przedstawiające Wojciecha Falkowskiego'
                 // madeWithLove: 'Made with 💖 by Wojciech Falkowski'
             },
         }

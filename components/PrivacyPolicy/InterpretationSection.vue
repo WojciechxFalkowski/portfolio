@@ -1,10 +1,12 @@
 <script setup lang="ts">
-const title = "Interpretation and Definitions";
-const subtitle = "Interpretation";
-const content = `
-  The words of which the initial letter is capitalized have meanings defined under the following conditions. 
-  The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
-`;
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+
+const title = computed(() => t("privacyPolicy.interpretationAndDefinitions.title"));
+const subtitle = computed(() => t("privacyPolicy.interpretationAndDefinitions.subtitle"));
+const content = computed(() => t("privacyPolicy.interpretationAndDefinitions.content"));
 </script>
 
 <template>
