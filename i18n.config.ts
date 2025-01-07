@@ -49,7 +49,7 @@ export default defineI18nConfig(() => ({
                             { title: "HTML", link: "", icon: "" },
                             { title: "CSS", link: "", icon: "" },
                             {
-                                title: "",
+                                title: "Travel",
                                 link: "https://wojciechxfalkowski.github.io/Travel-website",
                                 icon: "",
                             },
@@ -63,7 +63,7 @@ export default defineI18nConfig(() => ({
                             { title: "Bootstrap", link: "", icon: "" },
                             { title: "CMS", link: "", icon: "" },
                             { title: "Docker", link: "", icon: "" },
-                            { title: "", link: "http://141.144.224.51", icon: "" },
+                            { title: "Trip Guide", link: "http://141.144.224.51", icon: "" },
 
                         ],
                     },
@@ -74,7 +74,7 @@ export default defineI18nConfig(() => ({
                             { title: "Vue", link: "", icon: "" },
                             { title: "Custom CMS", link: "", icon: "" },
                             // { title: "Case study", link: "", icon: "" },
-                            { title: "", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
+                            { title: "Well Rent", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
 
                         ],
                     },
@@ -712,6 +712,7 @@ export default defineI18nConfig(() => ({
                 },
             },
             common: {
+                openLink: 'Open a link to the page',
                 privacyPolicy: 'Privacy policy',
                 cookiesSettings: 'Cookies settings',
                 allRightsReserve: 'All rights reserved.',
@@ -765,7 +766,7 @@ export default defineI18nConfig(() => ({
                             { title: "HTML", link: "", icon: "" },
                             { title: "CSS", link: "", icon: "" },
                             {
-                                title: "",
+                                title: "podróże",
                                 link: "https://wojciechxfalkowski.github.io/Travel-website",
                                 icon: "",
                             },
@@ -779,7 +780,7 @@ export default defineI18nConfig(() => ({
                             { title: "Bootstrap", link: "", icon: "" },
                             { title: "CMS", link: "", icon: "" },
                             { title: "Docker", link: "", icon: "" },
-                            { title: "", link: "http://141.144.224.51", icon: "" },
+                            { title: "Trip Guide", link: "http://141.144.224.51", icon: "" },
                         ],
                     },
                     {
@@ -789,7 +790,7 @@ export default defineI18nConfig(() => ({
                             { title: "Vue", link: "", icon: "" },
                             { title: "Autorski CMS", link: "", icon: "" },
                             // { title: "Studium przypadku", link: "", icon: "" },
-                            { title: "", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
+                            { title: "Well Rent", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
                         ],
                     },
                 ]
@@ -1421,6 +1422,7 @@ export default defineI18nConfig(() => ({
                 },
             },
             common: {
+                openLink: 'Otwórz link do strony',
                 privacyPolicy: 'Polityka prywatności',
                 cookiesSettings: 'Ustawienia cookies',
                 allRightsReserve: 'Wszystkie prawa zastrzeżone.',

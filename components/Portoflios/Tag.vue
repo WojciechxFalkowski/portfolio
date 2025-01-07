@@ -2,6 +2,7 @@
   <NuxtLink
     v-if="link"
     :to="link"
+    :aria-label="$t('common.openLink') + ' ' + title"
     class="flex items-center px-2 rounded-md text-sm text-[#0F172A] hover:text-[#2DD4BF] transition-colors group"
   >
     <IconUrl class="w-[24px] h-[20px] text-orange-400" />
