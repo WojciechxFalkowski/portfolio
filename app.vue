@@ -12,17 +12,17 @@ const currentLanguage = computed(() => locale.value);
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk
-      ? `${titleChunk} | Wojciech Falkowski | Front-end Developer`
-      : "Wojciech Falkowski | Front-end Developer";
+      ? `${titleChunk} - Wojciech Falkowski`
+      : "Web Developer Wojciech Falkowski";
   },
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { key: "theme-color", name: "theme-color" },
-    {
-      name: "google-site-verification",
-      content: "rxAipKTOgycQJYvnfco-6awgcxmHst7nnCPiqFqic70",
-    },
+    // {
+    //   name: "google-site-verification",
+    //   content: "",
+    // },
     {
       property: "og:type",
       content: "website",

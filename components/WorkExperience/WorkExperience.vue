@@ -23,7 +23,7 @@
                 class="company-logo"
                 :src="job.logo"
                 loading="lazy"
-                :alt="job.name"
+                alt=""
               />
 
               <span class="company-title">{{ job.name }}</span>

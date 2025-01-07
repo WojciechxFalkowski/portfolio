@@ -3,6 +3,12 @@ export default defineI18nConfig(() => ({
     locale: 'pl',
     messages: {
         en: {
+            meta: {
+                title: "Web Developer",
+                description: "Are you looking for a web developer who will take care of your online business? You've come to the right place :) I will be happy to help you develop your business.",
+                ogTitle: "Web Developer",
+                ogDescription: "Are you looking for a web developer who will take care of your online business? You've come to the right place :) I will be happy to help you develop your business."
+            },
             header: {
                 greeting: "Hello, my name is",
                 title: "Wojciech Falkowski",
@@ -713,6 +719,12 @@ export default defineI18nConfig(() => ({
             },
         },
         pl: {
+            meta: {
+                title: "Web Developer",
+                description: "Szukasz web developera, który zadba o Twój biznes w sieci? Trafiłeś w odpowiednie miejsce :) Chętnie pomogę Ci w rozwoju biznesu. Zapraszam",
+                ogTitle: "Web Developer",
+                ogDescription: "Szukasz web developera, który zadba o Twój biznes w sieci? Trafiłeś w odpowiednie miejsce :) Chętnie pomogę Ci w rozwoju biznesu. Zapraszam"
+            },
             header: {
                 greeting: "Cześć, nazywam się",
                 title: "Wojciech Falkowski",
