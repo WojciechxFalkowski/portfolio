@@ -21,7 +21,7 @@ useHead({
     { key: "theme-color", name: "theme-color" },
     {
       name: "google-site-verification",
-      content: "google1a2accc275f7bf12.html",
+      content: "JrUxcS5USv5BauK-nJn-0ZJNHGf3-I0K8cVm-h-rY1U",
     },
     {
       property: "og:type",
