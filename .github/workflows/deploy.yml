@@ -1,0 +1,26 @@
+name: Deploy to Raspberry Pi
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Generate .env file
+        run: |
+          echo "FRONTEND_IMAGE=${{ vars.FRONTEND_IMAGE }}" >> .env
+          echo "BACKEND_BASE_URL=${{ vars.BACKEND_BASE_URL }}" >> .env
+          echo "PORT=${{ vars.PORT }}" >> .env
+
+      - name: Docker Compose
+        run: |
+          docker compose down
+          docker compose pull
+          docker compose up -d --build

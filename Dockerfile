@@ -1,6 +1,5 @@
-ARG NODE_VERSION=20.11-alpine
-
-FROM node:${NODE_VERSION} as base
+ARG FRONTEND_IMAGE
+FROM ${FRONTEND_IMAGE} as base
 
 ARG PORT
 
@@ -25,7 +24,7 @@ RUN npm prune
 # Run
 FROM base
 
-ENV PORT=$PORT
+EXPOSE ${PORT}
 
 COPY --from=build /src/.output /src/.output
 # Optional, only needed if you rely on unbundled dependencies

@@ -4,10 +4,13 @@ services:
     build:
       context: .
       args:
-        - PORT=${PORT}
+        - FRONTEND_IMAGE=${FRONTEND_IMAGE} # Przekazanie ARG FRONTEND_IMAGE
     restart: always
     ports:
       - ${PORT}:${PORT}
+    environment:
+      - NODE_ENV=production
+      - PORT=${PORT}
     networks:
       - portfolio
   nginx:
