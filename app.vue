@@ -13,16 +13,16 @@ useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk
       ? `${titleChunk} - Wojciech Falkowski`
-      : "Web Developer Wojciech Falkowski";
+      : "Wojciech Falkowski - Web Developer";
   },
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { key: "theme-color", name: "theme-color" },
-    // {
-    //   name: "google-site-verification",
-    //   content: "",
-    // },
+    {
+      name: "google-site-verification",
+      content: "google1a2accc275f7bf12.html",
+    },
     {
       property: "og:type",
       content: "website",
