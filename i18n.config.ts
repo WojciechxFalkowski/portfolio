@@ -228,7 +228,7 @@ export default defineI18nConfig(() => ({
                             "Develop ecology-focused projects.",
                             "Build a company showcase website.",
                             "Design, implement, and develop core functionalities.",
-                            "Proficient in estimating time requirements for specific features and implementing them efficiently",
+                            "Proficient in estimating time requirements for specific features and implementing them efficiently.",
                         ],
                     },
                     {
@@ -253,7 +253,7 @@ export default defineI18nConfig(() => ({
             },
             educationSection: {
                 grade: 'Ocena',
-                description: "My expertise spans across both front-end technologies, including JavaScript and TypeScript, as well as frameworks such as React.js or Vue.js. On the back-end, I excel in utilizing Node.js and Express.js to build scalable and efficient systems, with a strong emphasis on database management.",
+                description: "My primary expertise lies in front-end development, with a strong command of JavaScript, TypeScript, and frameworks like React.js and Vue.js. On the back-end, I have additional experience working with Node.js, Express.js, Java, and Spring Boot, as well as managing SQL databases, mainly for smaller-scale tasks or to complement front-end projects.",
                 title: 'Education & Skills',
                 subtitle: 'learning path',
                 education: [
@@ -978,7 +978,7 @@ export default defineI18nConfig(() => ({
             },
             educationSection: {
                 grade: 'Ocena',
-                description: "Programista aplikacji internetowych z ponad 4 letnim doświadczeniem z pasją do projektowania. Potrafiący obsłużyć całościowe wdrożenie strony internetowej od podstaw do ostatniej optymalizacji. Koncentruje się na zapewnieniu najwyższej jakości, funkcjonalnego, czystego kodu.",
+                description: "Moja główna specjalizacja to front-end development, w tym zaawansowana znajomość JavaScript, TypeScript oraz frameworków takich jak React.js i Vue.js. Mam również dodatkowe doświadczenie w pracy z Node.js, Express.js, Javą i Spring Boot, a także w zarządzaniu bazami danych SQL, głównie przy mniejszych projektach lub jako uzupełnienie pracy nad front-endem.",
                 title: 'Edukacja & Umiejętności',
                 subtitle: 'Ścieżka rozwoju',
                 education: [
