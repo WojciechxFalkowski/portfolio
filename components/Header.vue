@@ -46,11 +46,14 @@ const imageUrl = "/profile1.webp";
         media="(min-width: 1024px)"
         type="image/webp"
       />
-
       <img
-        src="/profile1.webp"
+        src="/profile_200x200.webp"
         :alt="$t('common.headerPicture')"
         fetchpriority="high"
+        loading="eager"
+        sizes="(max-width: 639px) 200px, (min-width: 640px) and (max-width: 1023px) 250px, (min-width: 1024px) 400px"
+        width="200"
+        height="200"
         class="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] lg:w-[400px] lg:h-[400px] object-cover lg:mt-0 rounded-full border-[#23A5A4] border"
       />
     </picture>
