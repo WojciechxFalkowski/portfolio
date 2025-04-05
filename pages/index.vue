@@ -53,4 +53,7 @@ useMetaTags({
     "software development",
   ],
 });
+
+// Add breadcrumb navigation
+useStructuredData({ type: 'BreadcrumbList', data: {} });
 </script>

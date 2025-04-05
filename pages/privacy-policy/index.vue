@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import { useMetaTags } from "@/composables/useMetaTags";
+import { useStructuredData } from "@/composables/useStructuredData";
 
 const { t } = useI18n();
 
@@ -15,6 +16,41 @@ useMetaTags({
     "website privacy",
     "data security",
   ],
+});
+
+// Add breadcrumb navigation with translations
+useStructuredData({
+  type: "BreadcrumbList",
+  data: {
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        item: {
+          "@id": "https://wojciechfalkowski.pl",
+          name: "Home",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        item: {
+          "@id": "https://wojciechfalkowski.pl/privacy-policy",
+          name: "Privacy Policy",
+        },
+      },
+    ],
+  },
+  translations: {
+    pl: {
+      home: "Strona główna",
+      breadcrumb_privacy_policy: "Polityka prywatności",
+    },
+    en: {
+      home: "Home",
+      breadcrumb_privacy_policy: "Privacy Policy",
+    },
+  },
 });
 </script>
 
