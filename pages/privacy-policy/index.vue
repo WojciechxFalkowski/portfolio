@@ -1,4 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+import { useMetaTags } from "@/composables/useMetaTags";
+
+const { t } = useI18n();
+
+useMetaTags({
+  title: "Privacy Policy - Wojciech Falkowski",
+  description:
+    "Privacy policy for wojciechfalkowski.pl. Learn how we collect, use, and protect your personal information.",
+  keywords: [
+    "privacy policy",
+    "data protection",
+    "personal information",
+    "website privacy",
+    "data security",
+  ],
+});
+</script>
 
 <template>
   <ContainerWrapper class="my-8">

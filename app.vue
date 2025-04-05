@@ -9,50 +9,8 @@ const { locale } = useI18n();
 
 const currentLanguage = computed(() => locale.value);
 
-useHead({
-  titleTemplate: (titleChunk) => {
-    return titleChunk
-      ? `${titleChunk} - Wojciech Falkowski`
-      : "Wojciech Falkowski - Web Developer";
-  },
-  meta: [
-    { charset: "utf-8" },
-    { name: "viewport", content: "width=device-width, initial-scale=1" },
-    { key: "theme-color", name: "theme-color" },
-    {
-      name: "google-site-verification",
-      content: "JrUxcS5USv5BauK-nJn-0ZJNHGf3-I0K8cVm-h-rY1U",
-    },
-    {
-      property: "og:type",
-      content: "website",
-    },
-    {
-      property: "og:site_name",
-      content: "https://wojciechfalkowski.pl",
-    },
-    {
-      name: "og:site_name",
-      content: "https://wojciechfalkowski.pl",
-    },
-    {
-      property: "lang",
-      content: currentLanguage.value,
-    },
-    {
-      name: "og:url",
-      content: route.fullPath,
-    },
-    {
-      property: "og:url",
-      content: route.fullPath,
-    },
-  ],
-  link: [{ rel: "icon", href: "/favicon.ico" }],
-  htmlAttrs: {
-    lang: currentLanguage.value,
-  },
-});
+// Use default meta tags for the app
+useMetaTags();
 </script>
 
 <template>

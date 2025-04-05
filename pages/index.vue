@@ -37,21 +37,20 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
-useHead({
+useMetaTags({
   title: t("meta.title"),
-  meta: [
-    {
-      name: "description",
-      content: t("meta.description"),
-    },
-    {
-      property: "og:title",
-      content: t("meta.ogTitle"),
-    },
-    {
-      property: "og:description",
-      content: t("meta.ogDescription"),
-    },
+  description: t("meta.description"),
+  keywords: [
+    "web development",
+    "portfolio",
+    "frontend development",
+    "backend development",
+    "fullstack developer",
+    "vue.js",
+    "nuxt.js",
+    "typescript",
+    "web design",
+    "software development",
   ],
 });
 </script>
