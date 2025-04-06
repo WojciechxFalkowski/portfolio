@@ -14,7 +14,6 @@ export default defineNuxtConfig({
     locales: ['en', 'pl'], // used in URL path prefix
     strategy: 'prefix_except_default',
     defaultLocale: 'pl',
-    vueI18n: './i18n.config.ts' // if you are using custom path, default
   },
   colorMode: {
     classSuffix: ''

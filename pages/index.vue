@@ -55,5 +55,5 @@ useMetaTags({
 });
 
 // Add breadcrumb navigation
-useStructuredData({ type: 'BreadcrumbList', data: {} });
+useStructuredData({ type: "BreadcrumbList", data: {} });
 </script>
