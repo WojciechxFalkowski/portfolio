@@ -5,17 +5,17 @@
     </ContainerWrapper>
 
     <AnimateContainer>
-      <SectionServices />
+      <LazySectionServices hydrate-on-visible />
     </AnimateContainer>
 
     <AnimateContainer>
       <ContainerWrapper>
-        <FeaturedPortfolios />
+        <LazyFeaturedPortfolios hydrate-on-visible />
       </ContainerWrapper>
     </AnimateContainer>
 
     <AnimateContainer>
-      <WorkExperience />
+      <LazyWorkExperience hydrate-on-visible />
     </AnimateContainer>
 
     <!-- <AnimateContainer>
@@ -24,12 +24,12 @@
 
     <AnimateContainer>
       <ContainerWrapper>
-        <EducationAndSkillsSection />
+        <LazyEducationAndSkillsSection hydrate-on-visible />
       </ContainerWrapper>
     </AnimateContainer>
 
     <AnimateContainer>
-      <ContactForm />
+      <LazyContactForm hydrate-on-visible />
     </AnimateContainer>
   </div>
 </template>
