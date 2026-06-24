@@ -1,12 +1,20 @@
 <template>
   <NuxtLink
-    v-if="link"
+    v-if="link && !suppressLink"
     :to="link"
     :aria-label="$t('common.openLink') + ' ' + title"
-    class="flex items-center px-2 rounded-md text-sm text-[#0F172A] hover:text-[#23A5A4] transition-colors group"
+    class="flex items-center px-2 rounded-md text-sm text-[#0F172A] hover:text-[#23A5A4] transition-colors group cursor-pointer"
   >
     <IconUrl class="w-[24px] h-[20px] text-orange-400" />
   </NuxtLink>
+
+  <span
+    v-else-if="link && suppressLink"
+    class="flex items-center px-2 rounded-md text-sm text-[#0F172A] group"
+    aria-hidden="true"
+  >
+    <IconUrl class="w-[24px] h-[20px] text-orange-400" />
+  </span>
 
   <span
     v-else
@@ -30,6 +38,10 @@ const props = defineProps({
   icon: {
     type: String,
     default: "",
+  },
+  suppressLink: {
+    type: Boolean,
+    default: false,
   },
 });
 </script>

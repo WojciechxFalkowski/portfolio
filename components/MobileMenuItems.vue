@@ -2,7 +2,7 @@
   <transition name="fade">
     <div
       v-if="isMenuOpen"
-      class="testAA fixed inset-0 bg-white z-50 lg:hidden h-screen"
+      class="fixed inset-0 bg-white z-50 lg:hidden h-screen"
     >
       <div class="flex flex-col items-center justify-center h-full space-y-6">
         <a
@@ -15,6 +15,8 @@
         >
           {{ $t(item.label) }}
         </a>
+
+        <LanguageSwitcher class="mt-2" />
       </div>
     </div>
   </transition>
@@ -38,10 +40,15 @@ const props = withDefaults(
 
 const { menuItems, isMenuOpen } = toRefs(props);
 const emit = defineEmits(["closeMenu"]);
+const { locale } = useI18n();
 
 function closeMenu() {
   emit("closeMenu");
 }
+
+watch(locale, () => {
+  closeMenu();
+});
 
 function handleLinkClick(event: Event) {
   closeMenu();

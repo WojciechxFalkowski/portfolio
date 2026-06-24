@@ -1,5 +1,5 @@
 <template>
-  <Form @submit="onSubmit" :validation-schema="schema" :class="formClass">
+  <Form @submit="handleFormSubmit" :validation-schema="schema" :class="formClass">
     <div
       v-for="field in fields"
       :key="field.id"
@@ -38,17 +38,19 @@
       </div>
 
       <div v-else class="relative">
-        <Field
-          :as="field.as"
-          :name="field.id"
-          :id="field.id"
-          :type="field.type"
-          v-slot="{ field: slotField, errors }"
-          class="block px-2.5 pb-2.5 pt-5 w-full text-sm border border-[#23A5A4] rounded text-[#0F172A] appearance-none dark:text-white focus:outline-none focus:ring-0 peer"
-          v-model="formData[field.id]"
-          :placeholder="''"
-          :class="field.inputClass"
-        />
+        <Field v-slot="{ field: fieldAttrs }" :name="field.id">
+          <component
+            :is="field.as"
+            v-bind="fieldAttrs"
+            :id="field.id"
+            :type="field.type"
+            :placeholder="''"
+            :class="[
+              'block px-2.5 pb-2.5 pt-5 w-full text-sm border border-[#23A5A4] rounded text-[#0F172A] bg-white appearance-none focus:outline-none focus:ring-0 peer',
+              field.inputClass,
+            ]"
+          />
+        </Field>
 
         <label
           :for="field.id"
@@ -108,6 +110,10 @@ const formData = reactive(
     return acc;
   }, {} as Record<string, string | number>)
 );
+
+const handleFormSubmit = (values: Record<string, string>) => {
+  onSubmit(values);
+};
 
 const initialValues = computed(() => {
   return props.initialValues;

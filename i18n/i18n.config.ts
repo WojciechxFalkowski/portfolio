@@ -12,7 +12,7 @@ export default defineI18nConfig(() => ({
             header: {
                 greeting: "Hello, my name is",
                 title: "Wojciech Falkowski",
-                description: "Software Engineer with 4+ years of experience, who specialize in building modern, responsive, and user-friendly websites.",
+                description: "Software Engineer with {years}+ years of experience, who specialize in building modern, responsive, and user-friendly websites.",
                 contact: "Contact me"
             },
             services: {
@@ -41,8 +41,44 @@ export default defineI18nConfig(() => ({
                 description: 'My works',
                 projects: [
                     {
+                        title: "AquaSpot",
+                        image: "pportfolio_4.webp",
+                        description: "A platform that maps the real-time state of ~710 Polish swimming spots — water temperature, algae alerts, and beach status — so people know where it's safe to swim, while local water businesses gain visibility among tourists.", tags: [
+                            { title: "Nuxt", link: "", icon: "" },
+                            { title: "NestJS", link: "", icon: "" },
+                            { title: "MySQL", link: "", icon: "" },
+                            { title: "AquaSpot", link: "https://aqua-spot.pl", icon: "" },
+                        ],
+                    },
+                    {
+                        title: "Well Rent",
+                        image: "pportfolio_3.webp",
+                        description: "A website for a real estate agency offering rentals and property sales. Includes a custom CMS for managing listings and page content. Designed for clear navigation and a professional client experience.",
+                        tags: [
+                            { title: "Vue", link: "", icon: "" },
+                            { title: "Custom CMS", link: "", icon: "" },
+                            // { title: "Case study", link: "", icon: "" },
+                            { title: "Well Rent", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
+
+                        ],
+                    },
+                    {
+                        title: "Trip Guide",
+                        image: "pportfolio_2.webp",
+                        description: "A travel guide web app for discovering destinations and planning trips. Editors manage content through a built-in CMS, and the stack runs in Docker for easy deployment. Built with Vue.js and Bootstrap.",
+                        tags: [
+                            { title: "Vue", link: "", icon: "" },
+                            { title: "Bootstrap", link: "", icon: "" },
+                            { title: "CMS", link: "", icon: "" },
+                            { title: "Docker", link: "", icon: "" },
+                            { title: "Trip Guide", link: "http://141.144.224.51", icon: "" },
+
+                        ],
+                    },
+                    {
                         title: "Travel",
                         image: "pportfolio_1.webp",
+                        description: "An early portfolio project — a static single-page travel website built with HTML and CSS. Focused on responsive layout and a clean presentation of travel content without JavaScript frameworks.",
                         tags: [
                             {
                                 title: "Single Page Application",
@@ -56,29 +92,6 @@ export default defineI18nConfig(() => ({
                                 link: "https://wojciechxfalkowski.github.io/Travel-website",
                                 icon: "",
                             },
-                        ],
-                    },
-                    {
-                        title: "Trip Guide",
-                        image: "pportfolio_2.webp",
-                        tags: [
-                            { title: "Vue", link: "", icon: "" },
-                            { title: "Bootstrap", link: "", icon: "" },
-                            { title: "CMS", link: "", icon: "" },
-                            { title: "Docker", link: "", icon: "" },
-                            { title: "Trip Guide", link: "http://141.144.224.51", icon: "" },
-
-                        ],
-                    },
-                    {
-                        title: "Well Rent",
-                        image: "pportfolio_3.webp",
-                        tags: [
-                            { title: "Vue", link: "", icon: "" },
-                            { title: "Custom CMS", link: "", icon: "" },
-                            // { title: "Case study", link: "", icon: "" },
-                            { title: "Well Rent", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
-
                         ],
                     },
                 ]
@@ -739,7 +752,7 @@ export default defineI18nConfig(() => ({
             header: {
                 greeting: "Cześć, nazywam się",
                 title: "Wojciech Falkowski",
-                description: "Jestem programistą z ponad 4-letnim doświadczeniem, specjalizującym się w budowaniu nowoczesnych, responsywnych i przyjaznych dla użytkownika stron internetowych.",
+                description: "Jestem programistą z ponad {experienceAdjective} doświadczeniem, specjalizującym się w budowaniu nowoczesnych, responsywnych i przyjaznych dla użytkownika stron internetowych.",
                 contact: "Skontaktuj się"
             },
             services: {
@@ -768,37 +781,19 @@ export default defineI18nConfig(() => ({
                 description: 'Moje prace',
                 projects: [
                     {
-                        title: "Strona internetowa podróży",
-                        image: "pportfolio_1.webp",
-                        tags: [
-                            {
-                                title: "Statyczna strona",
-                                link: "",
-                                icon: "",
-                            },
-                            { title: "HTML", link: "", icon: "" },
-                            { title: "CSS", link: "", icon: "" },
-                            {
-                                title: "podróże",
-                                link: "https://wojciechxfalkowski.github.io/Travel-website",
-                                icon: "",
-                            },
-                        ],
-                    },
-                    {
-                        title: "Trip Guide",
-                        image: "pportfolio_2.webp",
-                        tags: [
-                            { title: "Vue", link: "", icon: "" },
-                            { title: "Bootstrap", link: "", icon: "" },
-                            { title: "CMS", link: "", icon: "" },
-                            { title: "Docker", link: "", icon: "" },
-                            { title: "Trip Guide", link: "http://141.144.224.51", icon: "" },
+                        title: "AquaSpot",
+                        image: "pportfolio_4.webp",
+                        description: "Platforma mapowa i marketplace dla rekreacji wodnej w Polsce. Pokazuje w czasie rzeczywistym temperaturę wody, ostrzeżenia o sinicach i stan ~710 kąpielisk, pomagając uniknąć nietrafionych wyjazdów — a lokalnym wypożyczalniom i firmom daje miejsce, w którym znajdą ich turyści.", tags: [
+                            { title: "Nuxt", link: "", icon: "" },
+                            { title: "NestJS", link: "", icon: "" },
+                            { title: "MySQL", link: "", icon: "" },
+                            { title: "AquaSpot", link: "https://aqua-spot.pl", icon: "" },
                         ],
                     },
                     {
                         title: "Well Rent",
                         image: "pportfolio_3.webp",
+                        description: "Strona biura nieruchomości oferującego wynajem i sprzedaż lokali. Obejmuje autorski CMS do zarządzania ogłoszeniami i treścią podstron. Zaprojektowana z myślą o przejrzystej nawigacji i profesjonalnym odbiorze.",
                         tags: [
                             { title: "Vue", link: "", icon: "" },
                             { title: "Autorski CMS", link: "", icon: "" },
@@ -806,6 +801,37 @@ export default defineI18nConfig(() => ({
                             { title: "Well Rent", link: "https://wellrent-nieruchomosci.pl/", icon: "" },
                         ],
                     },
+                    // {
+                    //     title: "Trip Guide",
+                    //     image: "pportfolio_2.webp",
+                    //     description: "Aplikacja webowa z przewodnikiem turystycznym do odkrywania miejsc i planowania wyjazdów. Redaktorzy zarządzają treścią przez wbudowany CMS, a całość działa w Dockerze. Zbudowana w Vue.js i Bootstrap.",
+                    //     tags: [
+                    //         { title: "Vue", link: "", icon: "" },
+                    //         { title: "Bootstrap", link: "", icon: "" },
+                    //         { title: "CMS", link: "", icon: "" },
+                    //         { title: "Docker", link: "", icon: "" },
+                    //         { title: "Trip Guide", link: "http://141.144.224.51", icon: "" },
+                    //     ],
+                    // },
+                    // {
+                    //     title: "Strona internetowa podróży",
+                    //     image: "pportfolio_1.webp",
+                    //     description: "Wczesny projekt portfolio — statyczna strona podróżnicza zbudowana w HTML i CSS. Skupiona na responsywnym układzie i czytelnej prezentacji treści, bez frameworków JavaScript.",
+                    //     tags: [
+                    //         {
+                    //             title: "Statyczna strona",
+                    //             link: "",
+                    //             icon: "",
+                    //         },
+                    //         { title: "HTML", link: "", icon: "" },
+                    //         { title: "CSS", link: "", icon: "" },
+                    //         {
+                    //             title: "podróże",
+                    //             link: "https://wojciechxfalkowski.github.io/Travel-website",
+                    //             icon: "",
+                    //         },
+                    //     ],
+                    // },
                 ]
             },
             contactForm: {

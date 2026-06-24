@@ -12,12 +12,11 @@ export const useEmailConfiguration = () => {
             const response = await $fetch<void>(`${runtimeConfig.public.BACKEND_BASE_URL}/email`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(
-                    {
-                        email,
-                        name,
-                        message
-                    })
+                body: {
+                    email,
+                    name,
+                    message,
+                },
             })
 
             return response

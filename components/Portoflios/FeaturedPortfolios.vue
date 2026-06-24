@@ -49,17 +49,34 @@
       <Slide
         v-for="(item, i) in portfolios"
         :key="item.title"
-        class="flex flex-wrap border border-[#F5F5F5] rounded-md shadow-sm"
+        :class="[
+          'flex flex-wrap items-start w-full border border-[#F5F5F5] rounded-md shadow-sm transition-[transform,box-shadow] duration-200',
+          getProjectLink(item)
+            ? 'cursor-pointer hover:-translate-y-1 hover:shadow-md'
+            : '',
+        ]"
+        :tabindex="getProjectLink(item) ? 0 : undefined"
+        :role="getProjectLink(item) ? 'link' : undefined"
+        :aria-label="
+          getProjectLink(item)
+            ? `${$t('common.openLink')} ${item.title}`
+            : undefined
+        "
+        @pointerdown="handleCardPointerDown"
+        @pointermove="handleCardPointerMove"
+        @click="handleCardClick(item)"
+        @keydown.enter="handleCardClick(item)"
+        @keydown.space.prevent="handleCardClick(item)"
       >
         <div
-          class="aspect-[10/8] sm:aspect-[10/6] md:aspect-[10/8] overflow-hidden lg:w-[382px] lg:h-[306px] basis-full max-h-[560px]"
+          class="relative w-full shrink-0 overflow-hidden aspect-[10/8] lg:aspect-auto lg:h-[306px]"
         >
           <img
             :src="item.image"
             :alt="item.title"
             loading="lazy"
             fetchpriority="low"
-            class="w-full h-full object-cover"
+            class="absolute inset-0 h-full w-full object-cover"
           />
         </div>
 
@@ -68,6 +85,13 @@
             {{ item.title }}
           </h3>
 
+          <p
+            v-if="item.description"
+            class="text-sm text-[#656D72] leading-relaxed basis-full text-start"
+          >
+            {{ item.description }}
+          </p>
+
           <div class="flex flex-wrap items-center gap-2 basis-full">
             <Tag
               v-for="(tag, idx) in item.tags"
@@ -75,6 +99,7 @@
               :title="tag.title"
               :link="tag.link"
               :icon="tag.icon"
+              :suppress-link="Boolean(getProjectLink(item))"
             />
           </div>
         </div>
@@ -87,6 +112,7 @@
 interface PortfolioProject {
   title: string;
   image: string;
+  description?: string;
   tags: PortfolioTag[];
 }
 
@@ -118,6 +144,39 @@ const portfolios = computed<PortfolioProject[]>(
     )?.portfolios.projects as PortfolioProject[]) || []
 );
 
+const cardPointerState = reactive({
+  startX: 0,
+  startY: 0,
+  hasMoved: false,
+});
+
+const getProjectLink = (item: PortfolioProject): string =>
+  item.tags.find((tag) => tag.link)?.link ?? "";
+
+const handleCardPointerDown = (event: PointerEvent): void => {
+  cardPointerState.startX = event.clientX;
+  cardPointerState.startY = event.clientY;
+  cardPointerState.hasMoved = false;
+};
+
+const handleCardPointerMove = (event: PointerEvent): void => {
+  const deltaX = Math.abs(event.clientX - cardPointerState.startX);
+  const deltaY = Math.abs(event.clientY - cardPointerState.startY);
+  if (deltaX > 5 || deltaY > 5) {
+    cardPointerState.hasMoved = true;
+  }
+};
+
+const handleCardClick = (item: PortfolioProject): void => {
+  if (cardPointerState.hasMoved) {
+    return;
+  }
+  const url = getProjectLink(item);
+  if (url) {
+    navigateTo(url, { external: true });
+  }
+};
+
 const carouselBreakpoints = {
   0: {
     itemsToShow: 1,
@@ -145,3 +204,15 @@ function goPrev() {
   carousel.value?.prev?.();
 }
 </script>
+
+<style scoped>
+:deep(.carousel__slide) {
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+}
+
+:deep(.carousel__track) {
+  align-items: flex-start;
+}
+</style>

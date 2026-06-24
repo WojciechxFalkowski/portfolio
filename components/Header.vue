@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const imageUrl = "/profile1.webp";
+const { yearsOfExperience, polishExperienceAdjective } = useYearsOfExperience();
 </script>
 
 <template>
@@ -16,7 +17,12 @@ const imageUrl = "/profile1.webp";
       </h1>
 
       <h2 class="text-justify lg:text-left lg:text-[20px] text-[#0F172A]">
-        {{ $t("header.description") }}
+        {{
+          $t("header.description", {
+            years: yearsOfExperience,
+            experienceAdjective: polishExperienceAdjective,
+          })
+        }}
       </h2>
 
       <button
@@ -83,7 +89,5 @@ const imageUrl = "/profile1.webp";
     />
   </header>
 </template>
-
-<script setup lang="ts"></script>
 
 <style></style>
