@@ -23,7 +23,7 @@
                 class="company-logo"
                 :src="job.logo"
                 loading="lazy"
-                alt=""
+                :alt="$t('workExperienceSection.logoAlt', { company: job.name })"
               />
 
               <span class="company-title">{{ job.name }}</span>

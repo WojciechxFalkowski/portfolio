@@ -18,6 +18,7 @@ export default defineI18nConfig(() => ({
             services: {
                 title: 'Specialized in',
                 description: 'Services',
+                iconAlt: '{title} icon',
                 offerings: {
                     websites: {
                         icon: "/crown.svg",
@@ -169,6 +170,7 @@ export default defineI18nConfig(() => ({
             workExperienceSection: {
                 title: 'Work Experices',
                 subtitle: 'career path',
+                logoAlt: 'Logo {company}',
                 work: [
                     {
                         id: 1,
@@ -758,6 +760,7 @@ export default defineI18nConfig(() => ({
             services: {
                 title: 'Specjalizuje się w',
                 description: 'Usługi',
+                iconAlt: 'Ikona {title}',
                 offerings: {
                     websites: {
                         icon: "/crown.svg",
@@ -907,6 +910,7 @@ export default defineI18nConfig(() => ({
             workExperienceSection: {
                 title: 'Doświadczenie',
                 subtitle: 'Ścieżka kariery',
+                logoAlt: 'Logo {company}',
                 work: [
                     {
                         id: 1,

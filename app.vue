@@ -19,7 +19,7 @@ useStructuredData({
   translations: {
     pl: {
       name: "Wojciech Falkowski",
-      jobTitle: "Frontend Developer",
+      jobTitle: "Web Developer",
       description:
         "Profesjonalny programista specjalizujący się w nowoczesnych technologiach internetowych.",
     },

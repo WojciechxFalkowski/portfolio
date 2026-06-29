@@ -12,6 +12,7 @@ export const useMetaTags = (options: {
     const route = useRoute()
     const { locale } = useI18n()
 
+    const siteUrl = 'https://wojciechfalkowski.pl'
     const defaultTitle = 'Wojciech Falkowski - Web Developer'
     const defaultDescription = 'Professional web developer specializing in modern web technologies. Check out my portfolio and get in touch for your next project.'
     const defaultImage = '/og-image.jpg'
@@ -19,7 +20,10 @@ export const useMetaTags = (options: {
 
     const title = options.title || defaultTitle
     const description = options.description || defaultDescription
-    const image = options.image || defaultImage
+    const imagePath = options.image || defaultImage
+    const image = imagePath.startsWith('http')
+        ? imagePath
+        : `${siteUrl}${imagePath}`
     const keywords = options.keywords || defaultKeywords
 
     const fullUrl = `https://wojciechfalkowski.pl${route.fullPath}`

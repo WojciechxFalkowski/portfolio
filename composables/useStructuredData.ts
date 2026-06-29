@@ -39,8 +39,8 @@ export const useStructuredData = (options: StructuredDataOptions) => {
           name: getTranslatedText('name', 'Wojciech Falkowski'),
           url: baseUrl,
           sameAs: [
-            'https://github.com/wojciechfalkowski',
-            'https://www.linkedin.com/in/wojciechfalkowski/',
+            'https://github.com/WojciechxFalkowski',
+            'https://www.linkedin.com/in/wojciech-falkowski',
           ],
           jobTitle: getTranslatedText('jobTitle', 'Web Developer'),
           worksFor: {
